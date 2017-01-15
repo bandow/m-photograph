@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="HOTELSGO酒店狗-中国最大的分享式酒店管理平台"/>
+<meta name="keywords" content="HOTELSGO酒店狗-中国最大的分享式酒店管理平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>摄影平台</title>
+<link rel="stylesheet" href="styles/index.css">
+<link rel="stylesheet" href="styles/lib/swiper-3.3.1.min.css">
+<style>
+
+</style>
+<body>
+<div class="wrapper" id="wrapper">
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide"><img src="images/banner.png" alt="" /></div>
+	        <div class="swiper-slide"><img src="images/banner.png" alt="" /></div>
+	        <div class="swiper-slide"><img src="images/banner.png" alt="" /></div>
+	    </div>
+	    <div class="swiper-pagination"></div>
+	    <div class="header">
+	    	<div class="search">
+	    		<img src="images/search_icon.png" alt="">
+	    		<input type="text" placeholder="搜索主题/用户/城市…">
+	    	</div>
+	    	<div class="member">
+	    		<img src="images/member_icon.png" alt="">
+	    	</div>
+	    </div>
+	</div>
+</div>
+
+<!-- script begin -->
+<script src="scripts/lib/swiper-3.3.1.min.js"></script>
+<script>
+	//幻灯片
+	var mySwiper = new Swiper('.swiper-container',{
+		pagination : '.swiper-pagination',
+		loop : true,
+		autoplay: 5000,//可选选项，自动滑动
+	});
+</script>
+<!-- script end -->
+</body>
+</html>

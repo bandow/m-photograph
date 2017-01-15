@@ -1,0 +1,29 @@
+{
+  "name": "m-photograph",
+  "version": "1.0.0",
+  "description": "摄影平台（M站）",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.18.6",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "^4.3.11",
+    "gulp-uglify": "^2.0.0",
+    "gulp-sass": "^3.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bandow/m-photograph.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bandow/m-photograph/issues"
+  },
+  "homepage": "https://github.com/bandow/m-photograph#readme"
+}

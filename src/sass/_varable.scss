@@ -1,8 +1,7 @@
 $publicFont:"Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, sans-serif;
 $colorWhite:#fff;
 $colorBlack:#000;
-$color2f2f2c:#2f2f2c;
-$colora5a4a2:#a5a4a2;
+$colorPublic:#1B1A1F;
 
 @mixin transform($transforms) {
        -moz-transform: $transforms;

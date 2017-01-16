@@ -10,7 +10,7 @@ body{
     height: 100%;
     margin: 0 auto;
     overflow: hidden; 
-    background-color:$colorWhite;
+    background-color:$colorPublic;
 }
 .swiper-slide{
     width:100%;
@@ -28,4 +28,45 @@ body{
     display:-webkit-flex;
     display:flex;
     align-items:center;
+    .search{
+        margin-right:5%;
+        padding:0 5%;
+        height:1.5rem;
+        -webkit-flex:1;
+        flex:1;
+        background-color:$colorBlack;
+        opacity:.8;
+        border-radius:30px;
+        display:-webkit-flex;
+        display:flex;
+        align-items:center;
+        img{
+           height:60%;
+           margin-right:5%;
+        }
+        input{
+            background:none;
+            border:none;
+            outline:none;
+            height:100%;
+            -webkit-flex:1;
+            flex:1;
+            font:.65rem/1 $publicFont;
+            color:$colorWhite;
+        }
+    }
+    .member{
+       width:1.5rem;
+       height:1.5rem;
+       background-color:$colorBlack;
+       opacity:.8;
+       border-radius:100%;
+       justify-content:center;//子元素水平居中
+       align-items:center;//子元素垂直居中
+       display:-webkit-flex;
+       display:flex;
+       img{
+         width:60%;
+       }
+    }
 }

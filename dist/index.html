@@ -36,6 +36,52 @@
 	    	</div>
 	    </div>
 	</div>
+	<!--推荐主题 begin-->
+	<div class="theme">
+	    <div class="title">
+	    	<img src="images/titleL.png" alt="">
+	    	<h2>推荐主题</h2>
+	    	<img src="images/titleR.png" alt="">
+	    </div> 	
+		<div class="swiper-container2">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide"><img src="images/theme01.png" alt="" /></div>
+		        <div class="swiper-slide"><img src="images/theme01.png" alt="" /></div>
+		        <div class="swiper-slide"><img src="images/theme01.png" alt="" /></div>
+		        <div class="swiper-slide"><img src="images/theme01.png" alt="" /></div>
+		        <div class="swiper-slide"><img src="images/theme01.png" alt="" /></div>
+		    </div>
+		</div>
+	</div>
+	<!--推荐主题 end-->
+	<!-- 热门城市 begin -->
+	<div class="hotCity">
+		<div class="title">
+	    	<img src="images/titleL.png" alt="">
+	    	<h2>推荐主题</h2>
+	    	<img src="images/titleR.png" alt="">
+	    </div>
+	    <div class="hotCityList">
+	    	<ul>
+	    		<li>
+	    		 <a href="list.html">
+	    		 	<img src="images/sh.png" alt="">
+	    		 </a>	
+	    		</li>
+	    		<li>
+	    		<a href="">
+	    			<img src="images/sz.png" alt="">
+	    			 </a>
+	    		</li>
+	    		<li>
+	    		<a href="">
+	    			<img src="images/gz.png" alt="">
+	    			 </a>
+	    		</li>
+	    	</ul>
+	    </div>	
+	</div>
+	<!-- 热门城市 end -->
 </div>
 
 <!-- script begin -->
@@ -46,6 +92,14 @@
 		pagination : '.swiper-pagination',
 		loop : true,
 		autoplay: 5000,//可选选项，自动滑动
+	});
+
+	var mySwiper2 = new Swiper('.swiper-container2',{
+		effect : 'coverflow',
+		slidesPerView: 3,
+		centeredSlides: true,
+		loop : true,
+		autoplay: 10000,//可选选项，自动滑动
 	});
 </script>
 <!-- script end -->

@@ -116,94 +116,120 @@ body {
   min-height: 320px;
   margin: 0 auto;
   overflow: hidden;
-  background-color: #1B1A1F; }
-
-.swiper-slide {
-  width: 100%;
-  height: auto; }
-  .swiper-slide img {
-    width: 100%; }
+  background-color: #171717; }
 
 .header {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  z-index: 1;
-  width: 90%;
+  padding: 0 5%;
+  height: 2.4rem;
   display: -webkit-flex;
   display: flex;
-  align-items: center; }
-  .header .search {
-    margin-right: 5%;
-    padding: 0 5%;
-    height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B1A1F; }
+  .header h1 {
+    font: 0.75rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff;
     -webkit-flex: 1;
     flex: 1;
-    background-color: #000;
-    opacity: .8;
-    border-radius: 30px;
+    text-align: center; }
+  .header a {
+    width: 1rem; }
+    .header a img {
+      width: 80%; }
+
+.details {
+  width: 100%;
+  height: auto; }
+
+.detailsTop .img {
+  margin: 1rem auto .5rem;
+  width: 4rem;
+  height: 4rem; }
+  .detailsTop .img img {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 100%; }
+  .detailsTop .img p {
+    justify-content: center;
     display: -webkit-flex;
     display: flex;
-    align-items: center; }
-    .header .search img {
-      height: 60%;
-      margin-right: 5%; }
-    .header .search input {
-      background: none;
-      border: none;
-      outline: none;
-      height: 100%;
-      -webkit-flex: 1;
-      flex: 1;
-      font: 0.65rem/1 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-      color: #fff; }
-  .header .member {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #000;
-    opacity: .8;
-    border-radius: 100%;
-    justify-content: center;
     align-items: center;
+    margin: -.5rem auto 0;
+    padding: 0 3%;
+    background-color: #ffbc00;
+    border-radius: 5px;
+    width: 2rem;
+    height: .7rem;
+    position: relative; }
+    .detailsTop .img p img {
+      width: 10px; }
+    .detailsTop .img p span {
+      font: 0.5rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #fff; }
+
+.detailsTop h2 {
+  font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  color: #fff;
+  text-align: center; }
+
+.detailsTop p {
+  font: 0.65rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  color: #666;
+  text-align: center; }
+
+.detailsTop .item {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: .3rem 30% 0; }
+  .detailsTop .item span {
+    margin-left: .2rem;
+    padding: 0 3%;
+    background-color: #BDBDBD;
+    border-radius: 30px;
+    font: 0.5rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #4A4A4A;
+    -webkit-flex: 1;
+    flex: 1; }
+
+.detailsTop ul {
+  margin-top: .5rem;
+  height: 2.2rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.4); }
+  .detailsTop ul li {
+    -webkit-flex: 1;
+    flex: 1;
     display: -webkit-flex;
-    display: flex; }
-    .header .member img {
-      width: 60%; }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #666; }
+    .detailsTop ul li img {
+      height: .7rem;
+      margin-right: .3rem; }
+    .detailsTop ul li p {
+      font: 0.65rem/2.2rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #BDBDBD; }
 
-.theme .title {
-  margin: 1rem 0 .5rem;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center; }
-  .theme .title h2 {
-    font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-    color: #BDBDBD;
-    text-align: center;
-    margin: 0 .5rem; }
-  .theme .title img {
-    width: .8rem; }
+.sampleReels {
+  margin: 0 auto;
+  width: 96%; }
+  .sampleReels h2 {
+    font: 0.75rem/3 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #FFBC00; }
 
-.hotCity .title {
-  margin: 1rem 0 .5rem;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center; }
-  .hotCity .title h2 {
-    font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-    color: #BDBDBD;
-    text-align: center;
-    margin: 0 .5rem; }
-  .hotCity .title img {
-    width: .8rem; }
-
-.hotCity .hotCityList {
-  width: 90%;
-  margin: 0 auto; }
-  .hotCity .hotCityList ul li {
-    margin-bottom: .5rem; }
-    .hotCity .hotCityList ul li a {
-      font-size: 0; }
-    .hotCity .hotCityList ul li img {
-      width: 100%; }
+.comment {
+  margin: 0 auto;
+  width: 96%; }
+  .comment h2 {
+    padding: 0 3% 0 0;
+    font: 0.75rem/3 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #FFBC00; }
+    .comment h2 span {
+      color: #666;
+      font-size: .6rem;
+      float: right; }

@@ -116,94 +116,107 @@ body {
   min-height: 320px;
   margin: 0 auto;
   overflow: hidden;
-  background-color: #1B1A1F; }
-
-.swiper-slide {
-  width: 100%;
-  height: auto; }
-  .swiper-slide img {
-    width: 100%; }
+  background-color: #171717; }
 
 .header {
-  position: absolute;
-  top: 5%;
-  left: 5%;
-  z-index: 1;
-  width: 90%;
+  padding: 0 5%;
+  height: 2.4rem;
   display: -webkit-flex;
   display: flex;
-  align-items: center; }
-  .header .search {
-    margin-right: 5%;
-    padding: 0 5%;
-    height: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B1A1F; }
+  .header h1 {
+    font: 0.75rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff;
     -webkit-flex: 1;
     flex: 1;
+    text-align: center; }
+  .header a {
+    width: 1rem; }
+    .header a img {
+      width: 80%; }
+
+.list {
+  position: relative;
+  margin: .5rem auto;
+  width: 94%;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .list > a {
+    font-size: 0;
+    text-decoration: none;
+    overflow: hidden; }
+    .list > a > img {
+      width: 100%; }
+  .list .listContent {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 3%;
+    height: 4rem;
     background-color: #000;
     opacity: .8;
-    border-radius: 30px;
     display: -webkit-flex;
     display: flex;
-    align-items: center; }
-    .header .search img {
-      height: 60%;
-      margin-right: 5%; }
-    .header .search input {
-      background: none;
-      border: none;
-      outline: none;
-      height: 100%;
-      -webkit-flex: 1;
-      flex: 1;
-      font: 0.65rem/1 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-      color: #fff; }
-  .header .member {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: #000;
-    opacity: .8;
-    border-radius: 100%;
-    justify-content: center;
     align-items: center;
-    display: -webkit-flex;
-    display: flex; }
-    .header .member img {
-      width: 60%; }
-
-.theme .title {
-  margin: 1rem 0 .5rem;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center; }
-  .theme .title h2 {
-    font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-    color: #BDBDBD;
-    text-align: center;
-    margin: 0 .5rem; }
-  .theme .title img {
-    width: .8rem; }
-
-.hotCity .title {
-  margin: 1rem 0 .5rem;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center; }
-  .hotCity .title h2 {
-    font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-    color: #BDBDBD;
-    text-align: center;
-    margin: 0 .5rem; }
-  .hotCity .title img {
-    width: .8rem; }
-
-.hotCity .hotCityList {
-  width: 90%;
-  margin: 0 auto; }
-  .hotCity .hotCityList ul li {
-    margin-bottom: .5rem; }
-    .hotCity .hotCityList ul li a {
-      font-size: 0; }
-    .hotCity .hotCityList ul li img {
-      width: 100%; }
+    justify-content: center; }
+    .list .listContent .head {
+      width: 3rem;
+      height: 3rem;
+      border-radius: 100%;
+      overflow: hidden; }
+      .list .listContent .head img {
+        width: 100%; }
+    .list .listContent .text {
+      margin-left: .5rem;
+      -webkit-flex: 1;
+      flex: 1; }
+      .list .listContent .text .name {
+        display: -webkit-flex;
+        display: flex;
+        align-items: center; }
+        .list .listContent .text .name h3 {
+          font: 0.75rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+          color: #fff; }
+        .list .listContent .text .name p {
+          display: -webkit-flex;
+          display: flex;
+          align-items: center;
+          margin-left: .3rem;
+          padding: 0 3%;
+          background-color: #ffbc00;
+          border-radius: 5px;
+          width: 2.5rem;
+          height: .7rem; }
+          .list .listContent .text .name p span {
+            font: 0.5rem/0.7rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+            color: #fff; }
+          .list .listContent .text .name p img {
+            width: .5rem; }
+      .list .listContent .text p {
+        font: 0.6rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        color: #BDBDBD; }
+      .list .listContent .text .textList > span {
+        margin-left: .2rem;
+        padding: 0 3%;
+        background-color: #BDBDBD;
+        border-radius: 30px;
+        font: 0.5rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        color: #4A4A4A; }
+    .list .listContent .reward {
+      padding: .5% 3%;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      border-radius: 30px;
+      border: 1px solid #FFBC00; }
+      .list .listContent .reward img {
+        width: .5rem;
+        margin-right: .2rem; }
+      .list .listContent .reward p {
+        font: 0.65rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        color: #FFBC00; }

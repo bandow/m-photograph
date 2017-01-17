@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>一键下单</title>
+<link rel="stylesheet" href="styles/order.css">
+<body>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+    	<a href="javascript:history.go(-1)"><img src="images/go_back.png" alt=""></a>
+    	<h1>一键下单</h1>
+    	<a class="spot" href=""><em></em><em></em><em></em></a>
+    </header>
+    <div class="order">
+    	<div class="orderTop">
+            <div class="head"><img src="images/theme01.png" alt=""></div>
+            <div class="text">
+                <div class="name">
+                    <h3>翔子lens</h3>
+                    <p><img src="images/star.png" alt=""><span>LV.3</span></p>
+                </div>
+                <p>生活就是相机，每时每刻都会留下生活就是相机，每时每刻都会留下</p>
+                <p class="textList">擅长：<span>人像</span><span>日系</span><span>情绪</span></p>
+            </div>   
+        </div>
+        <div class="orderBotton">
+            <ul>
+                <li>
+                    <span>数量</span>
+                    <div class="number">
+                        <div class="add"><img src="images/add.png" alt=""></div>
+                        <span>1</span>
+                        <div class="subtract"><img src="images/subtract.png" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <span>单价</span>
+                    <div>
+                        <input type="tel" placeholder="请与摄影师确认单价">
+                    </div>
+                </li>
+                <li>
+                    <span>拍摄日期</span>
+                    <div class="data">
+                        <p><span>2017-01-01</span>至<span>2017-01-02</span></p>
+                    </div>
+                </li>
+                <li>
+                    <span>交付日期</span>
+                    <div>
+                        <p>2017-01-05</p>
+                    </div>
+                </li>
+                <li>
+                    <span>备注</span>
+                    <div>
+                        <textarea placeholder="备注信息"></textarea>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="orderText">
+            <h3>温馨提示：</h3>
+            <p>尊敬的用户，您好，请联系好价格再进行下单，下单后不可修改</p>
+        </div>
+    </div>
+    <div class="bottomLayer">
+        <span>总额: ￥299</span>
+        <a href="">马上下单</a>
+    </div>
+</div>
+<!-- script begin -->
+<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script>
+     $(document).ready(function(){
+        //控制图片高宽
+        var winHeight=$(window).height(), winWidth=$(window).width();
+        var maxWinWidth=640;
+        if(maxWinHeight=>winHeight){
+            $(".wrapper").width(winWidth).height(winHeight);
+        }else{
+            $(".wrapper").width(maxWinWidth);
+        }
+    });
+</script>
+<!-- script end -->
+</body>
+</html>

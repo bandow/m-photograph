@@ -13,9 +13,7 @@
 <meta name="msapplication-tap-highlight" content="no">
 <title>摄影平台详细资料</title>
 <link rel="stylesheet" href="styles/details.css">
-<style>
-
-</style>
+<link rel="stylesheet" href="styles/lib/swiper-3.3.1.min.css">
 <body>
 <div class="wrapper" id="wrapper">
     <header class="header">
@@ -39,10 +37,26 @@
     	</div>
     	<div class="sampleReels">
     		<h2>作品集 · 22</h2>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="images/banner.png" alt="" />
+                      <p>人像摄影 · 冬天日系</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner.png" alt="" />
+                        <p>人像摄影 · 冬天日系</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner.png" alt="" />
+                        <p>人像摄影 · 冬天日系</p>
+                    </div>
+                </div>        
+            </div>
     	</div>
     	<div class="comment">
-    		<h2>评价 · 10201<span>查看全部</span></h2>
-    		<ul>
+    		<h2><span>评价 · 10201</span><a href="">查看全部</a></h2>
+    		<ul class="commentList">
     			<li>
     			    <div class="commentTop">
     			    	<div class="icon"><img src="images/theme01.png" alt=""></div>
@@ -50,7 +64,13 @@
     			    		<h3>多多</h3>
     			    		<div class="star">
     			    			<p>评分：</p>
-
+                                <ul class="star5">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
     			    		</div>
     			    	</div>
     			    	<div class="time">
@@ -59,16 +79,45 @@
     			    </div>
     				<p>摄影师出品很好，服务周到，连化妆师都有了~很不错的一次拍摄体验，</p>
     			</li>
+                <li>
+                    <div class="commentTop">
+                        <div class="icon"><img src="images/theme01.png" alt=""></div>
+                        <div class="name">
+                            <h3>多多</h3>
+                            <div class="star">
+                                <p>评分：</p>
+                                <ul class="star5">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="time">
+                            <p>2016-8-19</p>
+                        </div>
+                    </div>
+                    <p>摄影师出品很好，服务周到，连化妆师都有了~很不错的一次拍摄体验，</p>
+                </li>
     		</ul>
     	</div>
     </div>
-	
+	<a class="booking" href="order.html">一键下单</a>
 </div>
 
 <!-- script begin -->
 <script src="scripts/lib/swiper-3.3.1.min.js"></script>
 <script>
-
+    //幻灯片
+    var mySwiper = new Swiper('.swiper-container',{
+        pagination : '.swiper-pagination',
+        loop : true,
+        autoplay: 5000,//可选选项，自动滑动
+        slidesPerView :1.2,
+        spaceBetween : 20,
+    });
 </script>
 <!-- script end -->
 </body>

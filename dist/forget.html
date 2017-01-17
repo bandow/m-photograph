@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>修改密码</title>
+<link rel="stylesheet" href="styles/register.css">
+<body>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+        <a href="javascript:history.go(-1)"><img src="images/go_back.png" alt=""></a>
+        <h1>修改密码</h1>
+    </header>
+    <div class="register">
+       <form class="registerForm">
+           <div class="registerItmes">
+               <div class="oldPassword">
+                   <span>原密码</span>
+                   <input type="text" placeholder="请输入原密码">
+               </div>
+               <div class="newPassword">
+                   <span>新密码</span>
+                   <input type="text" placeholder="请输入新密码">
+               </div>
+               <div class="newPassword">
+                   <span>确认新密码</span>
+                   <input type="text" placeholder="请确认新密码">
+               </div>
+           </div>
+           <button>确定修改</button>
+       </form>
+    </div>
+</div>
+<!-- script begin -->
+<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script>
+     $(document).ready(function(){
+        //控制图片高宽
+        var winHeight=$(window).height(), winWidth=$(window).width();
+        var maxWinWidth=640;
+        if(maxWinHeight=>winHeight){
+            $(".wrapper").width(winWidth).height(winHeight);
+        }else{
+            $(".wrapper").width(maxWinWidth);
+        }
+    });
+</script>
+<!-- script end -->
+</body>
+</html>

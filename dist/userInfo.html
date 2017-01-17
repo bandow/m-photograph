@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>会员信息</title>
+<link rel="stylesheet" href="styles/userInfo.css">
+<body>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+    	<a href="javascript:history.go(-1)"><img src="images/go_back.png" alt=""></a>
+    	<h1>会员信息</h1>
+    	<a class="spot" href=""><em></em><em></em><em></em></a>
+    </header>
+    <div class="userInfo">
+        <div class="userInfoItem">
+            <ul>
+                <li class="head">
+                    <a href="">
+                        <p>头像</p>
+                        <div class="img"><img src="images/theme01.png" alt=""></div>
+                    </a>
+                </li>
+                <li class="name">
+                    <a href="">
+                        <p>昵称</p>
+                        <span>翔子lens</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p>账号</p>
+                        <span>1030102</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">
+                        <p>个性签名</p>
+                        <span>生活就是相机，每时每刻都会留下美好的记忆</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- script begin -->
+<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script>
+     $(document).ready(function(){
+        //控制图片高宽
+        var winHeight=$(window).height(), winWidth=$(window).width();
+        var maxWinWidth=640;
+        if(maxWinHeight=>winHeight){
+            $(".wrapper").width(winWidth).height(winHeight);
+        }else{
+            $(".wrapper").width(maxWinWidth);
+        }
+    });
+</script>
+<!-- script end -->
+</body>
+</html>

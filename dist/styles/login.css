@@ -27,7 +27,7 @@ body {
   -webkit-overflow-scrolling: touch; }
 
 html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+h1, h2, .login h3, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -146,48 +146,65 @@ body {
   min-height: 320px;
   margin: 0 auto;
   overflow: hidden;
-  background-color: #1B1A1F; }
+  background: url(../images/login_bg.png) no-repeat;
+  background-size: 100% 100%; }
 
-.swiper-slide {
-  width: 100%;
-  height: auto; }
-  .swiper-slide img {
-    width: 100%; }
-
-.theme .title {
-  margin: 1rem 0 .5rem;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center; }
-  .theme .title h2 {
-    font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-    color: #BDBDBD;
-    text-align: center;
-    margin: 0 .5rem; }
-  .theme .title img {
-    width: .8rem; }
-
-.hotCity .title {
-  margin: 1rem 0 .5rem;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center; }
-  .hotCity .title h2 {
-    font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-    color: #BDBDBD;
-    text-align: center;
-    margin: 0 .5rem; }
-  .hotCity .title img {
-    width: .8rem; }
-
-.hotCity .hotCityList {
-  width: 90%;
-  margin: 0 auto; }
-  .hotCity .hotCityList ul li {
-    margin-bottom: .5rem; }
-    .hotCity .hotCityList ul li a {
-      font-size: 0; }
-    .hotCity .hotCityList ul li img {
-      width: 100%; }
+.login {
+  margin: 3rem auto;
+  width: 80%; }
+  .login h2, .login h3 {
+    font: 1.5rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff;
+    text-align: center; }
+  .login h3 {
+    font-size: .75rem; }
+  .login .form {
+    margin: 1rem 0; }
+    .login .form > div {
+      padding: 0 5%;
+      margin-bottom: .5rem;
+      width: 100%;
+      height: 2.4rem;
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 5px;
+      align-items: center;
+      display: -webkit-flex;
+      display: flex; }
+      .login .form > div img {
+        width: 1rem;
+        height: auto;
+        margin-right: .5rem; }
+      .login .form > div input {
+        background: none;
+        border: none;
+        outline: none;
+        -webkit-flex: 1;
+        flex: 1;
+        height: 100%;
+        color: #fff;
+        font-size: .7rem;
+        font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+        .login .form > div input::-webkit-input-placeholder {
+          color: #393939;
+          font-size: .7rem;
+          font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+    .login .form button {
+      margin-top: .5rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      background-color: #F7AC1D;
+      font: 0.7rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #fff;
+      border-radius: 5px; }
+  .login .loginFoot {
+    align-items: center;
+    display: -webkit-flex;
+    display: flex; }
+    .login .loginFoot a {
+      font: 0.65rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #B58502;
+      -webkit-flex: 1;
+      flex: 1; }
+      .login .loginFoot a:last-child {
+        text-align: right; }

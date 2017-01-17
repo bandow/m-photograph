@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>登录页面</title>
+<link rel="stylesheet" href="styles/login.css">
+<body>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+    	<h1>会员登录</h1>
+    </header>
+    <div class="login">
+        <h2>WELCOME</h2>
+        <h3>HAO YA TU</h3>
+        <form class="form">
+            <div class="phone">
+                <img src="images/phone_icon.png" alt="">
+                <input type="tel" placeholder="请输入手机号">
+            </div>
+            <div class="password">
+                <img src="images/password_icon.png" alt="">
+                <input type="password" placeholder="请输入密码">
+            </div>
+            <button>立即登录</button>
+        </form>
+        <div class="loginFoot">
+            <a href="forget.html">忘记密码？</a>
+            <a href="register.html">注册帐号</a>
+        </div>
+    </div>
+</div>
+<!-- script begin -->
+<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script>
+     $(document).ready(function(){
+        //控制图片高宽
+        var winHeight=$(window).height(), winWidth=$(window).width();
+        var maxWinWidth=640;
+        if(maxWinHeight=>winHeight){
+            $(".wrapper").width(winWidth).height(winHeight);
+        }else{
+            $(".wrapper").width(maxWinWidth);
+        }
+    });
+</script>
+<!-- script end -->
+</body>
+</html>

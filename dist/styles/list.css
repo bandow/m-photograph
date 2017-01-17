@@ -106,18 +106,6 @@ html {
   html {
     font-size: 24px; } }
 
-body {
-  width: 100%;
-  height: 100%; }
-
-#wrapper {
-  width: 100%;
-  max-width: 640px;
-  min-height: 320px;
-  margin: 0 auto;
-  overflow: hidden;
-  background-color: #171717; }
-
 .header {
   padding: 0 5%;
   height: 2.4rem;
@@ -133,9 +121,32 @@ body {
     flex: 1;
     text-align: center; }
   .header a {
+    text-align: center;
     width: 1rem; }
     .header a img {
       width: 80%; }
+  .header .spot {
+    display: -webkit-flex;
+    display: flex; }
+    .header .spot em {
+      margin: 0 0.05rem;
+      display: block;
+      width: .2rem;
+      height: .2rem;
+      background-color: #fff;
+      border-radius: 100%; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+#wrapper {
+  width: 100%;
+  max-width: 640px;
+  min-height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #171717; }
 
 .list {
   position: relative;

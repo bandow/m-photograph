@@ -106,18 +106,6 @@ html {
   html {
     font-size: 24px; } }
 
-body {
-  width: 100%;
-  height: 100%; }
-
-#wrapper {
-  width: 100%;
-  max-width: 640px;
-  min-height: 320px;
-  margin: 0 auto;
-  overflow: hidden;
-  background-color: #171717; }
-
 .header {
   padding: 0 5%;
   height: 2.4rem;
@@ -133,9 +121,32 @@ body {
     flex: 1;
     text-align: center; }
   .header a {
+    text-align: center;
     width: 1rem; }
     .header a img {
       width: 80%; }
+  .header .spot {
+    display: -webkit-flex;
+    display: flex; }
+    .header .spot em {
+      margin: 0 0.05rem;
+      display: block;
+      width: .2rem;
+      height: .2rem;
+      background-color: #fff;
+      border-radius: 100%; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+#wrapper {
+  width: 100%;
+  max-width: 640px;
+  min-height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #171717; }
 
 .details {
   width: 100%;
@@ -217,19 +228,130 @@ body {
 
 .sampleReels {
   margin: 0 auto;
-  width: 96%; }
+  width: 100%; }
   .sampleReels h2 {
+    margin: 0 auto;
+    width: 96%;
     font: 0.75rem/3 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     color: #FFBC00; }
+  .sampleReels .swiper-slide {
+    font-size: 0; }
+    .sampleReels .swiper-slide img {
+      width: 100%; }
+    .sampleReels .swiper-slide p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      padding: 0 5%;
+      font: 0.65rem/2.4 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      background-color: #000;
+      opacity: .8;
+      color: #fff; }
 
 .comment {
   margin: 0 auto;
   width: 96%; }
   .comment h2 {
+    position: relative;
     padding: 0 3% 0 0;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
     font: 0.75rem/3 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     color: #FFBC00; }
     .comment h2 span {
+      -webkit-flex: 1;
+      flex: 1; }
+    .comment h2 a {
       color: #666;
       font-size: .6rem;
-      float: right; }
+      text-decoration: none; }
+    .comment h2:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin-top: -3px;
+      width: 6px;
+      height: 6px;
+      border: 1px solid;
+      border-bottom: 0;
+      border-right: 0;
+      color: #ccc;
+      -moz-transform: rotateZ(135deg);
+      -o-transform: rotateZ(135deg);
+      -ms-transform: rotateZ(135deg);
+      -webkit-transform: rotateZ(135deg);
+      transform: rotateZ(135deg); }
+
+.commentList > li {
+  padding: 3% 0;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #333; }
+  .commentList > li > p {
+    font: 0.65rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #767676; }
+
+.commentTop {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem; }
+  .commentTop .icon {
+    margin-right: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    overflow: hidden; }
+    .commentTop .icon img {
+      width: 100%; }
+  .commentTop .name {
+    -webkit-flex: 1;
+    flex: 1; }
+    .commentTop .name h3 {
+      font: 0.65rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #bdbdbd; }
+    .commentTop .name .star {
+      display: -webkit-flex;
+      display: flex;
+      align-items: center; }
+      .commentTop .name .star p {
+        font: 0.65rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        color: #767676; }
+      .commentTop .name .star ul {
+        width: 3rem;
+        height: .53rem;
+        overflow: hidden; }
+      .commentTop .name .star .star0 {
+        background: url("../images/star0.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star1 {
+        background: url("../images/star1.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star2 {
+        background: url("../images/star2.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star3 {
+        background: url("../images/star3.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star4 {
+        background: url("../images/star4.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star5 {
+        background: url("../images/star5.png") no-repeat;
+        background-size: 100% 100%; }
+  .commentTop .time {
+    font: 0.5rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #393939; }
+
+.booking {
+  display: block;
+  width: 100%;
+  height: 2.4rem;
+  background-color: #FFBC00;
+  font: 0.65rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  color: #fff;
+  text-align: center;
+  text-decoration: none; }

@@ -146,48 +146,105 @@ body {
   min-height: 320px;
   margin: 0 auto;
   overflow: hidden;
-  background-color: #1B1A1F; }
+  background-color: #171717; }
 
-.swiper-slide {
-  width: 100%;
-  height: auto; }
-  .swiper-slide img {
-    width: 100%; }
-
-.theme .title {
-  margin: 1rem 0 .5rem;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center; }
-  .theme .title h2 {
-    font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-    color: #BDBDBD;
-    text-align: center;
-    margin: 0 .5rem; }
-  .theme .title img {
-    width: .8rem; }
-
-.hotCity .title {
-  margin: 1rem 0 .5rem;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  justify-content: center; }
-  .hotCity .title h2 {
-    font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-    color: #BDBDBD;
-    text-align: center;
-    margin: 0 .5rem; }
-  .hotCity .title img {
-    width: .8rem; }
-
-.hotCity .hotCityList {
+.cameraman .btn {
+  display: block;
+  text-decoration: none;
+  margin: 2rem auto;
   width: 90%;
-  margin: 0 auto; }
-  .hotCity .hotCityList ul li {
-    margin-bottom: .5rem; }
-    .hotCity .hotCityList ul li a {
-      font-size: 0; }
-    .hotCity .hotCityList ul li img {
-      width: 100%; }
+  border: none;
+  outline: none;
+  background-color: #F7AC1D;
+  font: 0.7rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  color: #fff;
+  border-radius: 5px;
+  text-align: center; }
+
+.cameramanItem ul {
+  padding: 0 0 0 5%;
+  background-color: #1b1b1b;
+  margin-bottom: .5rem; }
+  .cameramanItem ul li {
+    border-bottom: 1px solid #333; }
+    .cameramanItem ul li:last-child {
+      border-bottom: none; }
+  .cameramanItem ul .theme {
+    display: -webkit-flex;
+    display: flex;
+    align-items: flex-start; }
+    .cameramanItem ul .theme:after {
+      right: -100%; }
+    .cameramanItem ul .theme p {
+      -webkit-flex: 1.2;
+      flex: 1.2;
+      font: 0.75rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #BDBDBD; }
+    .cameramanItem ul .theme .themeTag {
+      -webkit-flex: 3;
+      flex: 3; }
+      .cameramanItem ul .theme .themeTag input {
+        background: none;
+        border: none;
+        outline: none;
+        -webkit-flex: 1;
+        flex: 1;
+        height: 100%;
+        color: #fff;
+        font-size: .7rem;
+        font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+        .cameramanItem ul .theme .themeTag input::-webkit-input-placeholder {
+          color: #393939;
+          font-size: .7rem;
+          font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+  .cameramanItem ul li a {
+    position: relative;
+    padding: 3% 8% 3% 0;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    text-decoration: none; }
+    .cameramanItem ul li a p {
+      -webkit-flex: 1;
+      flex: 1;
+      font: 0.75rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #BDBDBD; }
+    .cameramanItem ul li a span {
+      font: 0.6rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #444; }
+    .cameramanItem ul li a:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 5%;
+      margin-top: -3px;
+      width: 6px;
+      height: 6px;
+      border: 1px solid;
+      border-bottom: 0;
+      border-right: 0;
+      color: #ccc;
+      -moz-transform: rotateZ(135deg);
+      -o-transform: rotateZ(135deg);
+      -ms-transform: rotateZ(135deg);
+      -webkit-transform: rotateZ(135deg);
+      transform: rotateZ(135deg); }
+
+.themeTagList {
+  margin-top: .5rem; }
+  .themeTagList dd {
+    float: left;
+    margin: 0 3% 2% 0;
+    border: 1px solid #444;
+    border-radius: 30px;
+    height: 1rem;
+    padding: 0 3%; }
+    .themeTagList dd em {
+      display: block;
+      font: 0.6rem/1rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #444; }
+  .themeTagList .active {
+    background-color: #FFBC00;
+    border: 1px solid #FFBC00; }
+    .themeTagList .active em {
+      color: #fff; }

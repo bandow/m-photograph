@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>成为摄影师</title>
+<link rel="stylesheet" href="styles/cameraman.css">
+<body>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+    	<a href="javascript:history.go(-1)"><img src="images/go_back.png" alt=""></a>
+    	<h1>成为摄影师</h1>
+    	<a class="spot" href=""><em></em><em></em><em></em></a>
+    </header>
+    <div class="cameraman">
+        <div class="cameramanItem">
+            <ul>
+                <li>
+                    <a href="">
+                        <p>所在城市</p>
+                        <span>请选择</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <p>拍摄城市</p>
+                        <span>请选择</span>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <a href="">
+                        <p>主摄影风格</p>
+                        <span>请选择</span>
+                    </a>
+                </li>
+                <li class="theme">
+                    <p>擅长主题</p>
+                    <div class="themeTag">
+                        <input type="text" placeholder="空格可以隔开多个主题">
+                        <dl class="themeTagList">
+                            <dd><em>人像</em></dd>
+                            <dd><em>风光</em></dd>
+                            <dd><em>城市</em></dd>
+                            <dd><em>建筑</em></dd>
+                            <dd><em>酒店室内</em></dd>
+                            <dd><em>日系</em></dd>
+                            <dd><em>其他名称</em></dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <a class="btn" href="">下一步</a>
+    </div>
+</div>
+<!-- script begin -->
+<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script>
+     $(document).ready(function(){
+        //控制图片高宽
+        var winHeight=$(window).height(), winWidth=$(window).width();
+        var maxWinWidth=640;
+        if(maxWinHeight=>winHeight){
+            $(".wrapper").width(winWidth).height(winHeight);
+        }else{
+            $(".wrapper").width(maxWinWidth);
+        }
+        //
+        $(".themeTagList dd").on("click",function(){
+            $(this).toggleClass("active");
+        });
+    });
+</script>
+<!-- script end -->
+</body>
+</html>

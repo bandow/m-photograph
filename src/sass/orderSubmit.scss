@@ -1,0 +1,239 @@
+@import 'base','varable','header';
+body{
+    width:100%;
+    height:100%
+}
+#wrapper{
+    width: 100%;
+    max-width: 640px;
+    min-height: 320px;
+    margin: 0 auto;
+    overflow: hidden; 
+    background-color:$colorBg;
+}
+.orderTop{
+	position: relative;
+	margin-bottom:.5rem;
+	padding:3% 10% 3% 5%;
+	background-color:#1b1b1b;
+	display:-webkit-flex;
+    display:flex;
+    align-items:center;
+	.head{
+    	width:3rem;
+    	height:3rem;
+    	border-radius:100%;
+    	overflow:hidden;
+    	img{
+    		width:100%;
+    	}
+    }
+    .text{
+    	margin-left:.5rem;
+    	-webkit-flex:1;
+    	flex:1;
+    	overflow : hidden;
+    	.name{
+    		display:-webkit-flex;
+		    display:flex;
+		    align-items:center;
+    		h3{
+    			font:.75rem/1.5 $publicFont;
+    			color:$colorWhite;	
+    		}
+    		p{
+    			display:-webkit-flex;
+			    display:flex;
+			    align-items:center;
+    			margin-left:.3rem;
+    			padding:0 3%;
+    			background-color:#FFD04C;
+    			border-radius:3px;
+			    width: 2.5rem;
+    			height:.7rem;
+    			span{
+    				font:.5rem/.7rem $publicFont;
+    				color:$colorWhite;
+    			}
+    			img{
+    				width:.5rem;
+    			}	
+    		}
+    	}
+    	p{
+    		font:.6rem/1.5 $publicFont;
+			color:#BDBDBD;
+			overflow : hidden;
+	  		text-overflow: ellipsis;
+			white-space: nowrap;
+    	}
+    	.textList{
+			>span{
+				margin-left:.2rem;
+			    padding: 0 3%;
+				background-color:#4A4A4A;
+				border-radius:30px;
+				font:.5rem/1.5 $publicFont;
+				color:#fff;
+			}
+    	}
+    }
+    &:after{
+        content:"";
+        position: absolute;
+        top:50%;
+        right:5%;
+        margin-top:-3px;
+        width:6px;
+        height:6px;
+        border: 1px solid;
+        border-bottom: 0;
+        border-right: 0;
+        color: #ccc;
+        @include transform(rotateZ(135deg));
+    }
+}
+.orderBotton{
+	margin-bottom:.5rem;
+	padding:3% 5%;
+	background-color:#1b1b1b;
+	ul li{
+		padding:3% 0;
+		display:-webkit-flex;
+	    display:flex;
+	    align-items:center;
+	    border-bottom:1px solid #333;
+	    &:last-child{
+	    	border-bottom:none;
+	    	align-items:flex-start;;
+	    }
+	    >span{
+	    	font:.65rem/1.5 $publicFont;
+			color:#dbdbdb;	
+			-webkit-flex:1;
+    		flex:1;
+	    }
+	    >div{
+			-webkit-flex:3;
+    		flex:3;
+    		input{
+    			background:none;
+    			border:none;
+    			outline:none;
+    			width:100%;
+    			height:100%;
+    			color:$colorWhite;
+    		    &::-webkit-input-placeholder{
+	                color:#393939;
+	                font:.65rem/1.5 $publicFont;
+	            }
+    		}
+    		textarea{
+    			background:none;
+    			border:none;
+    			outline:none;
+    			width:100%;
+    			height:100%;
+    			color:$colorWhite;
+    			&::-webkit-input-placeholder{
+	                color:#393939;
+	                font:.65rem/1.5 $publicFont;
+	            }
+    		}
+    		p{
+    			font:.65rem/1.5 $publicFont;
+    			color:#393939;
+    		}
+	    }
+	    .number{
+	    	display:-webkit-flex;
+		    display:flex;
+		    align-items:center;
+		    justify-content:flex-start;
+		    .add{
+		    	width:1rem;
+		    	height:1rem;
+		    	background-color:#393939;
+		    	display:-webkit-flex;
+		    	display:flex;
+		    	align-items:center;
+		    	justify-content:center;
+		    	img{
+		    		width:70%;
+		    		height:.15rem;
+		    	}
+		    }
+		    .subtract{
+		    	width:1rem;
+		    	height:1rem;
+		    	display:-webkit-flex;
+		    	display:flex;
+		    	background-color:#393939;
+		    	align-items:center;
+		    	justify-content:center;
+		    	img{
+		    		width:70%;
+		    		height:auto;
+		    	}
+		    }
+		    span{
+		    	display:block;
+		    	width:2rem;
+		    	font:.65rem/1.5 $publicFont;
+				color:#dbdbdb;	
+				text-align:center;
+		    }
+	    }
+	    .data{
+	    	p{
+	    		font:.65rem/1.5 $publicFont;
+	    		color:#bdbdbd;
+	    		span{
+    				color:#393939;
+    				margin-right:.5rem;
+    				&:last-child{
+    					margin-left:.5rem;
+    				}
+	    		}
+	    	}
+	    }
+	}
+}
+.orderText{
+	padding:2% 5%;
+	h3{
+		font:.7rem/1.5 $publicFont;
+		color:#767676;	
+	}
+	p{
+		font:.65rem/1.5 $publicFont;
+		color:#393939;	
+	}
+}
+.bottomLayer{
+	position:fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	height:2.4rem;
+	background-color:$colorWhite;
+	display:-webkit-flex;
+    display:flex;
+    align-items:center;
+    span{
+    	-webkit-flex:3;
+    	flex:3;
+    	font:.65rem/2.4rem $publicFont;
+    	color:#FFBC00;
+    	padding:0 5%;
+    }
+    a{
+    	background-color:#FFBC00;
+    	-webkit-flex:1;
+    	flex:1;
+    	font:.65rem/2.4rem $publicFont;
+    	color:$colorWhite;
+    	text-align:center;
+    	text-decoration:none;
+    }
+}

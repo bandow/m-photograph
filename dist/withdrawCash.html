@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>我的收益</title>
+<link rel="stylesheet" href="styles/myIncome.css">
+<body>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+    	<a href="javascript:history.go(-1)"><img src="images/go_back.png" alt=""></a>
+    	<h1>我的收益</h1>
+    	<a class="spot" href=""><em></em><em></em><em></em></a>
+    </header>
+    <div class="cash">
+        <div class="cashTop">
+            <div class="l">
+                <h3>提现账户</h3>
+                <p>目前仅可提现到所绑定的微信账号</p>
+            </div>
+            <div class="r">
+                <p>微信：XIANGZI</p>
+            </div>
+        </div>
+        <div class="cashCon">
+            <h3>提现金额</h3>
+            <div class="c">
+                <span>￥</span>
+                <input type="text">
+            </div>
+            <div class="b">
+                <span>可提现金额：￥10391.99</span>
+                <span>全部提现</span>
+            </div>
+        </div>
+        <div class="cashBotton">
+            <span>验证码</span>
+            <input type="text" placeholder="请输入验证码">
+            <button>获取验证码</button>
+        </div>
+        <div class="text">
+            <h4>提现规则：</h4>
+            <p>1、提现必须为整数，且不少于100；</p>
+            <p>2、提现后3个工作日到账。</p>
+        </div>
+    </div>
+    <a class="cashBtn" href="">马上提现</a>
+</div>
+<!-- script begin -->
+<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script>
+     $(document).ready(function(){
+        //控制图片高宽
+        var winHeight=$(window).height(), winWidth=$(window).width();
+        var maxWinWidth=640;
+        if(maxWinHeight=>winHeight){
+            $(".wrapper").width(winWidth).height(winHeight);
+        }else{
+            $(".wrapper").width(maxWinWidth);
+        }
+        //切换
+        $(".items li").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".incomeContainer .incomeList").eq($(this).index()).show().siblings().hide();
+        })
+    });
+</script>
+<!-- script end -->
+</body>
+</html>

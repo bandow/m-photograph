@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/* =================================================================
+* Reset Style for Mobile
+* Author:雪丘行||Bandow
+* Author URI:http://www.unll123.com/
+* Date:2016-10-18
+* Version:0.0.1
+* ================================================================== */
+html {
+  font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  /*-webkit-text-size-adjust是解决 iPhone 横屏时默认会放大文字的问题*/
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+html, body {
+  /*-webkit-user-select:none禁止用户进行复制.选择.*/
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  /*使用min-height:100%代替height：100%*/
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  /*弹性滚动-局部滚动开启弹性滚动：将属性挂在body上，可以避免很多奇怪的bug。*/
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, div, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  /*把所有元素的内边距和边框不再会增加它的宽度*/
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  box-sizing: border-box; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-size: 18px; }
+
+@media (min-device-width: 320px) {
+  html {
+    font-size: 18px; } }
+
+@media (min-device-width: 360px) {
+  html {
+    font-size: 20px; } }
+
+@media (min-device-width: 375px) {
+  html {
+    font-size: 21px; } }
+
+@media (min-device-width: 384px) {
+  html {
+    font-size: 21px; } }
+
+@media (min-device-width: 400px) {
+  html {
+    font-size: 22px; } }
+
+@media (min-device-width: 414px) {
+  html {
+    font-size: 23px; } }
+
+@media (min-device-width: 480px) {
+  html {
+    font-size: 26px; } }
+
+@media (min-device-width: 568px) {
+  html {
+    font-size: 28px; } }
+
+@media (min-device-width: 533px) {
+  html {
+    font-size: 28px; } }
+
+@media (min-device-width: 600px) {
+  html {
+    font-size: 30px; } }
+
+@media (min-device-width: 640px) {
+  html {
+    font-size: 24px; } }
+
+.header {
+  padding: 0 5%;
+  height: 2.4rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B1A1F; }
+  .header h1 {
+    font: 0.75rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center; }
+  .header a {
+    text-align: center;
+    width: 1rem; }
+    .header a img {
+      width: 80%; }
+  .header .spot {
+    display: -webkit-flex;
+    display: flex; }
+    .header .spot em {
+      margin: 0 0.05rem;
+      display: block;
+      width: .2rem;
+      height: .2rem;
+      background-color: #fff;
+      border-radius: 100%; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+#wrapper {
+  width: 100%;
+  max-width: 640px;
+  min-height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #171717; }
+
+.comment {
+  margin: 0 auto;
+  width: 96%; }
+  .comment h2 {
+    position: relative;
+    padding: 0 3% 0 0;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    font: 0.75rem/3 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #FFBC00; }
+    .comment h2 span {
+      -webkit-flex: 1;
+      flex: 1; }
+
+.commentList > li {
+  padding: 3% 0;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #333; }
+
+.commentTop {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem; }
+  .commentTop .icon {
+    margin-right: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    overflow: hidden; }
+    .commentTop .icon img {
+      width: 100%; }
+  .commentTop .name {
+    -webkit-flex: 1;
+    flex: 1; }
+    .commentTop .name h3 {
+      font: 0.65rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #bdbdbd; }
+    .commentTop .name .star {
+      display: -webkit-flex;
+      display: flex;
+      align-items: center; }
+      .commentTop .name .star p {
+        font: 0.65rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        color: #767676; }
+      .commentTop .name .star ul {
+        width: 3rem;
+        height: .53rem;
+        overflow: hidden; }
+      .commentTop .name .star .star0 {
+        background: url("../images/star0.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star1 {
+        background: url("../images/star1.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star2 {
+        background: url("../images/star2.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star3 {
+        background: url("../images/star3.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star4 {
+        background: url("../images/star4.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star5 {
+        background: url("../images/star5.png") no-repeat;
+        background-size: 100% 100%; }
+  .commentTop .time {
+    font: 0.5rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #393939; }
+
+.commentBotton {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+  .commentBotton .l {
+    -webkit-flex: 1;
+    flex: 1;
+    margin-right: 1rem; }
+    .commentBotton .l > p {
+      font: 0.65rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #767676;
+      margin-bottom: .3rem; }
+      .commentBotton .l > p span {
+        color: #4C9DFC; }
+      .commentBotton .l > p:last-child {
+        margin-bottom: 0; }
+  .commentBotton .r {
+    width: 1.2rem;
+    height: auto; }
+    .commentBotton .r img {
+      width: 80%; }
+
+.commentText {
+  position: fixed;
+  left: 2.5%;
+  right: 2.5%;
+  bottom: 1%;
+  z-index: 1;
+  display: -webkit-flex;
+  display: flex;
+  display: none;
+  align-items: center; }
+  .commentText .l {
+    -webkit-flex: 1;
+    flex: 1;
+    margin-right: .5rem;
+    background: #393939;
+    border-radius: 5px;
+    height: 2rem; }
+    .commentText .l input {
+      padding: 0 5%;
+      background: none;
+      border: none;
+      outline: none;
+      width: 100%;
+      height: 100%;
+      font: 0.7rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #fff;
+      -webkit-flex: 2.5;
+      flex: 2.5; }
+      .commentText .l input::-webkit-input-placeholder {
+        color: #767676;
+        font: 0.65rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+  .commentText button {
+    padding: 0 5%;
+    height: 2rem;
+    background: none;
+    border: none;
+    outline: none;
+    background: #FFBC00;
+    border-radius: 5px;
+    font: 0.7rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff; }

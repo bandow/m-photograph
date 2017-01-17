@@ -1,0 +1,81 @@
+@import 'base','varable','header';
+body{
+    width:100%;
+    height:100%
+}
+#wrapper{
+    width: 100%;
+    max-width: 640px;
+    min-height: 320px;
+    margin: 0 auto;
+    overflow: hidden; 
+    background-color:$colorBg;
+}
+.becomePhotograph{
+	.btn{
+		display:block;
+		text-decoration:none;
+		margin:2rem auto;
+		width:90%;
+   		border:none;
+   		outline:none;
+   		background-color:#F7AC1D;
+   		font:.7rem/2.4rem $publicFont;
+		color:$colorWhite;
+		border-radius:5px;
+		text-align:center;
+	}
+}
+.becomePhotographImg{
+	padding:5%;
+	background-color:#1b1b1b;
+	margin:.5rem 0;
+	.btn-upload{
+		position:relative;
+	    margin: 0 auto;
+		overflow:hidden;
+		width:5rem;
+		height:5rem;
+		border:1px dashed #333;
+		.foot{
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			img{
+				margin:20% 30% 10%;
+				width:40%;
+				height:auto;
+			}
+			p{
+				font:.6rem/1.5 $publicFont;
+				color:#333;
+				text-align:center;
+			}
+		}
+		.js_showBox{
+			position:relative;
+			z-index:1;
+			width:100%;
+			height:100%;
+			opacity: 0;
+			img{
+				width:100%;
+				height:100%;
+			}
+		}
+		input{
+			position:absolute;
+			top:0;
+			left:0;
+			right:0;
+			bottom:0;
+			z-index:2;
+			background:none;
+			border:none;
+			outline:none;
+			opacity:0;
+		}
+	}
+}

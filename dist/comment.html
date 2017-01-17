@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>我的评论</title>
+<link rel="stylesheet" href="styles/comment.css">
+<body>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+    	<a href="javascript:history.go(-1)"><img src="images/go_back.png" alt=""></a>
+    	<h1>我的评论</h1>
+    	<a class="spot" href=""><em></em><em></em><em></em></a>
+    </header>
+    <div class="comment">
+    	<h2><span>评价 · 10201</span></h2>
+        <ul class="commentList">
+            <li>
+                <div class="commentTop">
+                    <div class="icon"><img src="images/theme01.png" alt=""></div>
+                    <div class="name">
+                        <h3>多多</h3>
+                        <div class="star">
+                            <p>评分：</p>
+                            <ul class="star5">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <p>2016-8-19</p>
+                    </div>
+                </div>
+                <div class="commentBotton">
+                    <div class="l">
+                        <p>摄影师出品很好，服务周到，连化妆师都有了~很不错的一次拍摄体验，一定会介绍朋友来。摄影师出品很好，服务周到，连化妆师都有了~很不错的一次拍摄体验，一定会介绍朋友来。很不错的一次拍摄体验，一定会介绍朋友来…</p>
+                        <p>
+                            <span>摄影师回复：</span><em>感谢您的信任！能拍出优秀漂亮的片子，离不开你对HAO YA TU的信任与支持</em>
+                        </p>
+                    </div>
+                    <div class="r"><img src="images/comment_icon.png" alt=""></div>
+                </div>  
+                <div class="commentText">
+                    <div class="l"><input class="contentInput" type="text" placeholder="评论 多多："></div>
+                    <button class="commentTextBtn">评论</button>
+                </div>            
+            </li>
+            <li>
+                <div class="commentTop">
+                    <div class="icon"><img src="images/theme01.png" alt=""></div>
+                    <div class="name">
+                        <h3>多多</h3>
+                        <div class="star">
+                            <p>评分：</p>
+                            <ul class="star5">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <p>2016-8-19</p>
+                    </div>
+                </div>
+                <div class="commentBotton">
+                    <div class="l">
+                        <p>摄影师出品很好，服务周到，连化妆师都有了~很不错的一次拍摄体验，一定会介绍朋友来…</p>
+                    </div>
+                    <div class="r"><img src="images/comment_icon.png" alt=""></div>
+                </div>  
+                <div class="commentText">
+                    <div class="l"><input class="contentInput" type="text" placeholder="评论 多多："></div>
+                    <button class="commentTextBtn">评论</button>
+                </div>                   
+            </li>
+            <li>
+                <div class="commentTop">
+                    <div class="icon"><img src="images/theme01.png" alt=""></div>
+                    <div class="name">
+                        <h3>多多</h3>
+                        <div class="star">
+                            <p>评分：</p>
+                            <ul class="star5">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="time">
+                        <p>2016-8-19</p>
+                    </div>
+                </div>
+                <div class="commentBotton">
+                    <div class="l">
+                        <p>摄影师出品很好，服务周到，连化妆师都有了~很不错的一次拍摄体验，一定会介绍朋友来…</p>
+                    </div>
+                    <div class="r"><img src="images/comment_icon.png" alt=""></div>
+                </div> 
+                 <div class="commentText">
+                    <div class="l"><input class="contentInput" type="text" placeholder="评论 多多："></div>
+                    <button class="commentTextBtn">评论</button>
+                </div>                 
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- script begin -->
+<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script>
+$(document).ready(function(){
+    //控制图片高宽
+    var winHeight=$(window).height(), winWidth=$(window).width();
+    var maxWinWidth=640;
+    if(maxWinHeight=>winHeight){
+        $(".wrapper").width(winWidth).height(winHeight);
+    }else{
+        $(".wrapper").width(maxWinWidth);
+    }
+
+//提交评论
+$(".commentBotton .r").on("click",function(){
+   $(this).parent().next().css("display","flex");
+});
+$(".commentTextBtn").on("click",function(){
+    var text=$(this).parent().find(".contentInput").val();
+    $(this).parent().parent().find(".commentBotton .l").append("<p><span>摄影师回复：</span><em>"+text+"</em></p>");
+    $(this).parent().hide();
+});
+
+});
+</script>
+<!-- script end -->
+</body>
+</html>

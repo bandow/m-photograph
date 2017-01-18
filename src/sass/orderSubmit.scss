@@ -14,7 +14,7 @@ body{
 .orderTop{
 	position: relative;
 	margin-bottom:.5rem;
-	padding:3% 10% 3% 5%;
+	padding:3% 10% 1% 5%;
 	background-color:#1b1b1b;
 	display:-webkit-flex;
     display:flex;
@@ -38,34 +38,22 @@ body{
 		    display:flex;
 		    align-items:center;
     		h3{
-    			font:.75rem/1.5 $publicFont;
+    			font:.75rem/2 $publicFont;
     			color:$colorWhite;	
     		}
-    		p{
-    			display:-webkit-flex;
-			    display:flex;
-			    align-items:center;
-    			margin-left:.3rem;
-    			padding:0 3%;
-    			background-color:#FFD04C;
-    			border-radius:3px;
-			    width: 2.5rem;
-    			height:.7rem;
-    			span{
-    				font:.5rem/.7rem $publicFont;
-    				color:$colorWhite;
-    			}
-    			img{
-    				width:.5rem;
-    			}	
-    		}
+			img{
+				margin-left:.5rem;
+				width:15%;
+			}	
+
     	}
     	p{
-    		font:.6rem/1.5 $publicFont;
+    		font:.6rem/1 $publicFont;
 			color:#BDBDBD;
 			overflow : hidden;
 	  		text-overflow: ellipsis;
 			white-space: nowrap;
+			margin-bottom:.5rem;
     	}
     	.textList{
 			>span{

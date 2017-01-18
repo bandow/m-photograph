@@ -266,7 +266,7 @@ body{
 				height:1rem;
 				background:url("../images/starBig.png") no-repeat;
 				background-size:100% auto;
-				background-position: -5.55rem 0;
+				background-position: -5.58rem 0;
 		    	li{
 		    		-webkit-flex:1;
 			    	flex:1;
@@ -309,5 +309,112 @@ body{
 	    color:$colorWhite;
 	    text-align:center;
 	    text-decoration:none;
+    }
+}
+//全部评论
+.wholeComment{
+	margin:0 auto;
+	width:96%;
+	h2{
+		position:relative;
+		padding:0 3% 0 0;
+		display:-webkit-flex;
+	    display:flex;
+	    align-items:center;
+		font:.75rem/3 $publicFont;
+		color:#FFBC00;
+		span{
+			-webkit-flex:1;
+			flex:1;
+		}
+		a{
+			color:#666;
+			font-size:.6rem;
+			text-decoration:none;
+		}
+	}
+}
+.commentList{
+	>li{
+		padding:3% 0;
+		margin-bottom:.5rem;
+		border-bottom:1px solid #333;
+		>p{
+			font:.65rem/1.2 $publicFont;
+	        color:#767676;
+	        margin-bottom:.5rem;
+	        span{
+	        	color:#4C9DFC;
+	        }
+	        &:last-child{
+               margin-bottom:0;
+	        }
+		}
+	}
+}
+.commentTop{
+	display:-webkit-flex;
+    display:flex;
+    align-items:center;
+    margin-bottom:.5rem;
+    .icon{
+    	margin-right:.5rem;
+    	width:1.5rem;
+    	height:1.5rem;
+    	border-radius:100%;
+    	overflow:hidden;
+    	img{
+    		width:100%;
+    	}
+    }
+    .name{
+    	-webkit-flex:1;
+    	flex:1;
+    	h3{
+			font:.65rem/1.2 $publicFont;
+	        color:#bdbdbd;
+    	}
+    	.star{
+			display:-webkit-flex;
+		    display:flex;
+		    align-items:center;
+		    p{
+				font:.65rem/1.2 $publicFont;
+		        color:#767676;
+		    }
+		    ul{
+			    width: 3rem;
+    			height: .53rem;
+			    overflow:hidden;
+			}
+			.star0{
+				background:url("../images/star0.png") no-repeat;
+				background-size:100% 100%;
+			}
+			.star1{
+				background:url("../images/star1.png") no-repeat;
+				background-size:100% 100%;
+			}
+			.star2{
+				background:url("../images/star2.png") no-repeat;
+				background-size:100% 100%;
+			}
+			.star3{
+				background:url("../images/star3.png") no-repeat;
+				background-size:100% 100%;
+			}
+			.star4{
+				background:url("../images/star4.png") no-repeat;
+				background-size:100% 100%;
+			}
+			.star5{
+				background:url("../images/star5.png") no-repeat;
+				background-size:100% 100%;
+			}
+    	}
+    }
+    .time{
+		font:.5rem/1.2 $publicFont;
+        color:#393939;
     }
 }

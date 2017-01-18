@@ -57,26 +57,26 @@
 <script>
      $(document).ready(function(){
         //控制图片高宽
-        var winHeight=$(window).height(), winWidth=$(window).width();
-        var maxWinWidth=640;
-        if(maxWinHeight=>winHeight){
-            $(".wrapper").width(winWidth).height(winHeight);
+        var winHeight=$(window).height();
+        var wrapperHeight=$(".wrapper").height();
+        if(wrapperHeight>winHeight){
+            $(".wrapper").css("height","auto");
         }else{
-            $(".wrapper").width(maxWinWidth);
+            $(".wrapper").css("height","100%");
         }
         //评论星星
         var arrComment=[];
         arrComment[0]={
-            num:'-5.55rem 0'
+            num:'-5.58rem 0'
         };
         arrComment[1]={
-            num:'-4.18rem 0'
+            num:'-4.22rem 0'
         };
         arrComment[2]={
-            num:'-2.76rem 0'
+            num:'-2.7795rem 0'
         };
         arrComment[3]={
-            num:'-1.4rem 0'
+            num:'-1.43rem 0'
         };
         arrComment[4]={
             num:'0 0'

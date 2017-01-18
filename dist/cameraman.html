@@ -68,12 +68,12 @@
 <script>
      $(document).ready(function(){
         //控制图片高宽
-        var winHeight=$(window).height(), winWidth=$(window).width();
-        var maxWinWidth=640;
-        if(maxWinHeight=>winHeight){
-            $(".wrapper").width(winWidth).height(winHeight);
+        var winHeight=$(window).height();
+        var wrapperHeight=$(".wrapper").height();
+        if(wrapperHeight>winHeight){
+            $(".wrapper").css("height","auto");
         }else{
-            $(".wrapper").width(maxWinWidth);
+            $(".wrapper").css("height","100%");
         }
         //
         $(".themeTagList dd").on("click",function(){

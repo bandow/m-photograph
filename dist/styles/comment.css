@@ -360,7 +360,7 @@ body {
         height: 1rem;
         background: url("../images/starBig.png") no-repeat;
         background-size: 100% auto;
-        background-position: -5.55rem 0; }
+        background-position: -5.58rem 0; }
         .publishContent .top .oc-star-n ul li {
           -webkit-flex: 1;
           flex: 1;
@@ -397,3 +397,87 @@ body {
     color: #fff;
     text-align: center;
     text-decoration: none; }
+
+.wholeComment {
+  margin: 0 auto;
+  width: 96%; }
+  .wholeComment h2 {
+    position: relative;
+    padding: 0 3% 0 0;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    font: 0.75rem/3 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #FFBC00; }
+    .wholeComment h2 span {
+      -webkit-flex: 1;
+      flex: 1; }
+    .wholeComment h2 a {
+      color: #666;
+      font-size: .6rem;
+      text-decoration: none; }
+
+.commentList > li {
+  padding: 3% 0;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid #333; }
+  .commentList > li > p {
+    font: 0.65rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #767676;
+    margin-bottom: .5rem; }
+    .commentList > li > p span {
+      color: #4C9DFC; }
+    .commentList > li > p:last-child {
+      margin-bottom: 0; }
+
+.commentTop {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  margin-bottom: .5rem; }
+  .commentTop .icon {
+    margin-right: .5rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    overflow: hidden; }
+    .commentTop .icon img {
+      width: 100%; }
+  .commentTop .name {
+    -webkit-flex: 1;
+    flex: 1; }
+    .commentTop .name h3 {
+      font: 0.65rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #bdbdbd; }
+    .commentTop .name .star {
+      display: -webkit-flex;
+      display: flex;
+      align-items: center; }
+      .commentTop .name .star p {
+        font: 0.65rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        color: #767676; }
+      .commentTop .name .star ul {
+        width: 3rem;
+        height: .53rem;
+        overflow: hidden; }
+      .commentTop .name .star .star0 {
+        background: url("../images/star0.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star1 {
+        background: url("../images/star1.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star2 {
+        background: url("../images/star2.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star3 {
+        background: url("../images/star3.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star4 {
+        background: url("../images/star4.png") no-repeat;
+        background-size: 100% 100%; }
+      .commentTop .name .star .star5 {
+        background: url("../images/star5.png") no-repeat;
+        background-size: 100% 100%; }
+  .commentTop .time {
+    font: 0.5rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #393939; }

@@ -218,3 +218,141 @@ body {
       color: #FFBC00;
       border-radius: 30px;
       text-decoration: none; }
+
+.orderPay .top {
+  padding: 5%;
+  background-color: #1B1B1B;
+  overflow: hidden; }
+  .orderPay .top h3 {
+    font: 0.7rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #BDBDBD; }
+  .orderPay .top p {
+    font: 0.65rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+.orderPay .item {
+  margin-top: .5rem;
+  padding: 3% 5%;
+  background-color: #1B1B1B; }
+  .orderPay .item .pay {
+    padding: 1% 0;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    background: url(../images/no_choice.png) #1B1B1B center right no-repeat;
+    background-size: 1rem 1rem; }
+    .orderPay .item .pay img {
+      width: 1rem;
+      height: auto;
+      margin-right: .5rem; }
+    .orderPay .item .pay span {
+      font: 0.65rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #BDBDBD; }
+  .orderPay .item .active {
+    background: url(../images/selected.png) #1B1B1B center right no-repeat;
+    background-size: 1rem 1rem; }
+
+.orderPayLayer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 2rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center; }
+  .orderPayLayer p {
+    padding-left: 5%;
+    -webkit-flex: 3;
+    flex: 3;
+    font: 0.7rem/2rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #FFBC00; }
+  .orderPayLayer a {
+    -webkit-flex: 1;
+    flex: 1;
+    display: block;
+    background-color: #FFBC00;
+    color: #fff;
+    font: 0.7rem/2rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    text-decoration: none;
+    text-align: center; }
+
+.orderDetails .head {
+  padding: 5%;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  background-color: #1b1b1b; }
+  .orderDetails .head .headIcon {
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    margin-right: 1rem; }
+    .orderDetails .head .headIcon img {
+      width: 100%;
+      height: 100%; }
+  .orderDetails .head .name {
+    -webkit-flex: 1;
+    flex: 1; }
+    .orderDetails .head .name h3 {
+      color: #fff;
+      font: 0.7rem/1 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+    .orderDetails .head .name img {
+      height: .5rem; }
+  .orderDetails .head .phone {
+    padding: 0 2% 0 0;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    border: 1px solid #FFBC00;
+    border-radius: 30px;
+    overflow: hidden; }
+    .orderDetails .head .phone .img {
+      background-color: #FFBC00;
+      text-align: center; }
+      .orderDetails .head .phone .img img {
+        padding: 0 .3rem;
+        height: .8rem; }
+    .orderDetails .head .phone p {
+      -webkit-flex: 1;
+      flex: 1;
+      color: #fff;
+      font: 0.6rem/1 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #FFBC00; }
+
+.orderDetails .mid {
+  margin-top: .5rem;
+  padding: 5%;
+  background-color: #1b1b1b;
+  overflow: hidden; }
+  .orderDetails .mid p {
+    font: 0.65rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
+
+.orderDetails .foot {
+  padding: 5%;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  .orderDetails .foot a {
+    margin: 2.5% 2%;
+    background-color: #FFBC00;
+    border-radius: 5px;
+    width: 46%;
+    font: 0.65rem/2rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff;
+    text-align: center;
+    text-decoration: none; }
+    .orderDetails .foot a:nth-child(3) {
+      border: 1px solid #FFBC00;
+      background-color: transparent;
+      color: #FFBC00; }

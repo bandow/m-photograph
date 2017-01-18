@@ -33,7 +33,7 @@ body{
     	margin-left:.5rem;
     	-webkit-flex:1;
     	flex:1;
-    	overflow : hidden;
+    	overflow:hidden;
     	.name{
     		display:-webkit-flex;
 		    display:flex;
@@ -42,23 +42,9 @@ body{
     			font:.75rem/1.5 $publicFont;
     			color:$colorWhite;	
     		}
-    		p{
-    			display:-webkit-flex;
-			    display:flex;
-			    align-items:center;
-    			margin-left:.3rem;
-    			padding:0 3%;
-    			background-color:#FFD04C;
-    			border-radius:3px;
-			    width: 2.5rem;
-    			height:.7rem;
-    			span{
-    				font:.5rem/.7rem $publicFont;
-    				color:$colorWhite;
-    			}
-    			img{
-    				width:.5rem;
-    			}	
+    		img{
+                margin-left:.3rem;
+    			height:.6rem;	
     		}
     	}
     	p{

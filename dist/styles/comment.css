@@ -283,3 +283,117 @@ body {
     border-radius: 5px;
     font: 0.7rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
     color: #fff; }
+
+.publish > div {
+  margin-bottom: .5rem; }
+  .publish > div:last-child {
+    margin-bottom: 0; }
+
+.publishTop {
+  margin-bottom: .5rem;
+  padding: 3% 10% 3% 5%;
+  background-color: #1b1b1b;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  text-decoration: none; }
+  .publishTop .head {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 100%;
+    overflow: hidden; }
+    .publishTop .head img {
+      width: 100%; }
+  .publishTop .text {
+    margin-left: .5rem;
+    -webkit-flex: 1;
+    flex: 1;
+    overflow: hidden; }
+    .publishTop .text .name {
+      display: -webkit-flex;
+      display: flex;
+      align-items: center; }
+      .publishTop .text .name h3 {
+        font: 0.75rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        color: #fff; }
+      .publishTop .text .name img {
+        margin-left: .3rem;
+        height: .6rem; }
+    .publishTop .text p {
+      font: 0.6rem/1.8 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #444;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
+    .publishTop .text .textList > span {
+      margin-left: .2rem;
+      padding: 0 3%;
+      background-color: #4A4A4A;
+      border-radius: 30px;
+      font: 0.5rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #fff; }
+
+.publishContent {
+  margin-bottom: .5rem;
+  padding: 5%;
+  background-color: #1b1b1b; }
+  .publishContent .top {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-bottom: 1px solid #333;
+    padding-bottom: .5rem; }
+    .publishContent .top span {
+      color: #fff;
+      font: 0.65rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      margin-right: .5rem; }
+    .publishContent .top .oc-star-n {
+      width: 6.5rem;
+      height: 1rem;
+      background: url("../images/starBig.png") no-repeat;
+      background-size: 100% auto;
+      background-position: 0 -1.1rem; }
+      .publishContent .top .oc-star-n ul {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        height: 1rem;
+        background: url("../images/starBig.png") no-repeat;
+        background-size: 100% auto;
+        background-position: -5.55rem 0; }
+        .publishContent .top .oc-star-n ul li {
+          -webkit-flex: 1;
+          flex: 1;
+          height: 1rem;
+          text-indent: -999px;
+          overflow: hidden;
+          padding: 0; }
+  .publishContent textarea {
+    margin-top: 1rem;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 4rem;
+    color: #fff;
+    font-size: .7rem;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+    .publishContent textarea::-webkit-input-placeholder {
+      color: #393939;
+      font-size: .7rem;
+      font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+
+.publishBtn {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2.4rem;
+  background-color: #FFBC00; }
+  .publishBtn a {
+    display: block;
+    font: 0.7rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff;
+    text-align: center;
+    text-decoration: none; }

@@ -151,7 +151,7 @@ body {
 .orderTop {
   position: relative;
   margin-bottom: .5rem;
-  padding: 3% 10% 3% 5%;
+  padding: 3% 10% 1% 5%;
   background-color: #1b1b1b;
   display: -webkit-flex;
   display: flex;
@@ -173,29 +173,18 @@ body {
       display: flex;
       align-items: center; }
       .orderTop .text .name h3 {
-        font: 0.75rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
         color: #fff; }
-      .orderTop .text .name p {
-        display: -webkit-flex;
-        display: flex;
-        align-items: center;
-        margin-left: .3rem;
-        padding: 0 3%;
-        background-color: #FFD04C;
-        border-radius: 3px;
-        width: 2.5rem;
-        height: .7rem; }
-        .orderTop .text .name p span {
-          font: 0.5rem/0.7rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-          color: #fff; }
-        .orderTop .text .name p img {
-          width: .5rem; }
+      .orderTop .text .name img {
+        margin-left: .5rem;
+        width: 15%; }
     .orderTop .text p {
-      font: 0.6rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      font: 0.6rem/1 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
       color: #BDBDBD;
       overflow: hidden;
       text-overflow: ellipsis;
-      white-space: nowrap; }
+      white-space: nowrap;
+      margin-bottom: .5rem; }
     .orderTop .text .textList > span {
       margin-left: .2rem;
       padding: 0 3%;

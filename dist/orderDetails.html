@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>订单详情</title>
+<link rel="stylesheet" href="styles/order.css">
+<body>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+    	<a href="javascript:history.go(-1)"><img src="images/go_back.png" alt=""></a>
+    	<h1>订单详情</h1>
+    	<a class="spot" href=""><em></em><em></em><em></em></a>
+    </header>
+    <div class="order">
+        <div class="orderDetails">
+            <div class="head">
+               <div class="headIcon">
+                  <img src="images/head_icon.png" alt="">
+               </div>
+               <div class="name">
+                 <h3>翔子lens</h3>
+                 <img src="images/grade3.png" alt="">
+               </div>
+               <div class="phone">
+                 <div class="img">
+                   <img src="images/phone.png" alt="">
+                 </div>
+                 <p>13800138000</p>
+               </div>
+            </div>
+            <div class="mid">
+              <p>订单状态：预订</p>
+              <p>拍摄地址：广州市天河区体育西路88号</p>
+              <p>拍摄主题：婚纱摄影</p>
+              <p>下单时间：2016-10-12</p>
+              <p>订单总额：10 张 * 29.9/张 = 299元</p>
+              <p>拍摄时间：2016-12-13 至 2016-12-15</p>
+              <p>交付时间：2016-12-30</p>
+              <p>备注：这里是很长的很长的备注信息…</p>
+            </div>
+            <div class="foot">
+              <a href="publishComment.html">评论</a>
+              <a href="">支付</a>
+              <a href="">取消</a>
+              <a href="">一键收货</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- script begin -->
+<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script>
+     $(document).ready(function(){
+        //控制图片高宽
+        var winHeight=$(window).height(), winWidth=$(window).width();
+        var maxWinWidth=640;
+        if(maxWinHeight=>winHeight){
+            $(".wrapper").width(winWidth).height(winHeight);
+        }else{
+            $(".wrapper").width(maxWinWidth);
+        }
+    });
+</script>
+<!-- script end -->
+</body>
+</html>

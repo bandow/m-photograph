@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>发表评论</title>
+<link rel="stylesheet" href="styles/comment.css">
+<body>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+    	<a href="javascript:history.go(-1)"><img src="images/go_back.png" alt=""></a>
+    	<h1>发表评论</h1>
+    	<a class="spot" href=""><em></em><em></em><em></em></a>
+    </header>
+    <div class="publish">
+    	<div class="publishTop">
+           <div class="head"><img src="images/head_icon.png" alt=""></div>
+            <div class="text">
+                <div class="name">
+                    <h3>翔子lens</h3>
+                    <img src="images/grade3.png" alt="">
+                </div>
+                <p>生活就是相机，每时每刻都会留下生活就是相机，每时每刻都会留下</p>
+                <p class="textList"><span>人像</span><span>日系</span><span>情绪</span></p>
+            </div>     
+        </div>
+        <div class="publishContent">
+           <div class="top">
+             <span>总分：</span>
+             <div class="oc-star-n">
+                <ul>  
+                    <li val="1"></li>  
+                    <li val="2"></li>  
+                    <li val="3"></li>  
+                    <li val="4"></li>  
+                    <li val="5"></li>  
+                </ul> 
+            </div>
+            </div>
+           <textarea placeholder="请输入评论内容"></textarea>
+        </div>
+        <div class="publishBtn">
+            <a href="">发表评论</a>
+        </div>
+    </div>
+</div>
+<!-- script begin -->
+<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script>
+     $(document).ready(function(){
+        //控制图片高宽
+        var winHeight=$(window).height(), winWidth=$(window).width();
+        var maxWinWidth=640;
+        if(maxWinHeight=>winHeight){
+            $(".wrapper").width(winWidth).height(winHeight);
+        }else{
+            $(".wrapper").width(maxWinWidth);
+        }
+        //评论星星
+        var arrComment=[];
+        arrComment[0]={
+            num:'-5.55rem 0'
+        };
+        arrComment[1]={
+            num:'-4.18rem 0'
+        };
+        arrComment[2]={
+            num:'-2.76rem 0'
+        };
+        arrComment[3]={
+            num:'-1.4rem 0'
+        };
+        arrComment[4]={
+            num:'0 0'
+        };
+         $(".oc-star-n ul li").each(function(index){
+           $(this).on("click",function(){
+                $(this).parent().css("background-position",arrComment[index].num)
+           })
+        });
+    });
+</script>
+<!-- script end -->
+</body>
+</html>

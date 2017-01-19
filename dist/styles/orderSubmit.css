@@ -263,26 +263,26 @@ body {
       display: flex;
       align-items: center;
       justify-content: flex-start; }
-      .orderBotton ul li .number .add {
-        width: 1rem;
-        height: 1rem;
-        background-color: #393939;
-        display: -webkit-flex;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .orderBotton ul li .number .add img {
-          width: 70%;
-          height: .15rem; }
       .orderBotton ul li .number .subtract {
         width: 1rem;
         height: 1rem;
+        background-color: #393939;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .orderBotton ul li .number .subtract img {
+          width: 70%;
+          height: .15rem; }
+      .orderBotton ul li .number .add {
+        width: 1rem;
+        height: 1rem;
         display: -webkit-flex;
         display: flex;
         background-color: #393939;
         align-items: center;
         justify-content: center; }
-        .orderBotton ul li .number .subtract img {
+        .orderBotton ul li .number .add img {
           width: 70%;
           height: auto; }
       .orderBotton ul li .number span {

@@ -13,6 +13,10 @@
 <meta name="msapplication-tap-highlight" content="no">
 <title>人像作品集</title>
 <link rel="stylesheet" href="styles/sampleReels.css">
+<link rel="stylesheet" href="styles/lib/dropload.css">
+<style>
+  .dropload-load,.dropload-noData{color:#fff;}
+</style>
 <body>
 <div class="wrapper" id="wrapper">
     <header class="header">
@@ -20,7 +24,7 @@
     	<h1>人像作品集</h1>
     	<a class="spot" href=""><em></em><em></em><em></em></a>
     </header>
-    <div class="sampleReelsList">
+    <div class="sampleReelsList lists">
         <div class="item">
             <a href="sampleReelsDetails.html">
                 <img src="images/sample_reels.png" alt="">
@@ -47,19 +51,70 @@
         </div>
         <div class="sampleReelsBtn"><a href="uploadSampleReels.html">上传作品集</a></div>
     </div>
+
 </div>
 <!-- script begin -->
-<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script src="scripts/lib/zepto.min.js"></script>
+<script src="scripts/lib/dropload.min.js"></script>
 <script>
-    $(document).ready(function(){
-        ///控制图片高宽
-        var winHeight=$(window).height();
-        var wrapperHeight=$(".wrapper").height();
-        if(wrapperHeight>winHeight){
-            $(".wrapper").css("height","auto");
-        }else{
-            $(".wrapper").css("height","100%");
-        }
+  $(function(){
+    var counter = 0;
+    // 每页展示4个
+    var num = 4;
+    var pageStart = 0,pageEnd = 0;
+    // dropload
+    $('.wrapper').dropload({
+    scrollArea : window,
+    loadDownFn : function(me){
+      $.ajax({
+          type: 'GET',
+          url: 'scripts/json/more.json',
+          dataType: 'json',
+          success: function(data){
+              var result = '';
+              counter++;
+              pageEnd = num * counter;
+              pageStart = pageEnd - num;
+
+              for(var i = pageStart; i < pageEnd; i++){
+                  result +=   '<a class="item opacity" href="'+data.lists[i].link+'">'
+                                  +'<img src="'+data.lists[i].pic+'" alt="">'
+                                  +'<h3>'+data.lists[i].title+'</h3>'
+                                  +'<span class="date">'+data.lists[i].date+'</span>'
+                              +'</a>';
+                  if((i + 1) >= data.lists.length){
+                      // 锁定
+                      me.lock();
+                      // 无数据
+                      me.noData();
+                      break;
+                  }
+              }
+              // 为了测试，延迟1秒加载
+              setTimeout(function(){
+                  $('.lists').append(result);
+                  // 每次数据加载完，必须重置
+                  me.resetload();
+              },1000);
+
+          },
+          error: function(xhr, type){
+              alert('Ajax error!');
+              // 即使加载出错，也得重置
+              me.resetload();
+          }
+      });
+    }
+    });
+  });
+</script>
+<script>
+     $(document).ready(function(){
+         //切换
+        $(".orderItems li").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+            $(".orderContainer .orderList").eq($(this).index()).show().siblings().hide();
+        })
     });
 </script>
 <!-- script end -->

@@ -147,7 +147,7 @@ body {
 #wrapper {
   width: 100%;
   max-width: 640px;
-  min-height: 320px;
+  min-height: 100%;
   margin: 0 auto;
   overflow: hidden;
   background-color: #171717; }
@@ -196,6 +196,111 @@ body {
       background-color: #000;
       opacity: .8;
       color: #fff; }
+
+.rewardMask {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  display: none;
+  padding: 5% 0 0 0;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  background: #171717;
+  border-radius: 5px; }
+  .rewardMask h3 {
+    text-align: center;
+    font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff; }
+  .rewardMask .head {
+    margin: 0 auto;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 100%; }
+    .rewardMask .head img {
+      width: 100%;
+      height: 100%; }
+  .rewardMask h4 {
+    text-align: center;
+    font: 0.6rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff; }
+  .rewardMask ul {
+    padding: 0 5%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .rewardMask ul li {
+      width: 48%;
+      height: 1.5rem;
+      border-radius: 30px;
+      border: 1px solid #FFBC00;
+      font: 0.6rem/1.5rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #FFBC00;
+      text-align: center;
+      margin: 5% 4% 0 0; }
+      .rewardMask ul li span {
+        font-size: .8rem;
+        margin-right: .2rem; }
+      .rewardMask ul li:nth-child(2n) {
+        margin-right: 0; }
+    .rewardMask ul ol {
+      border: 1px solid #FFBC00;
+      width: 100%;
+      height: 1.5rem;
+      border-radius: 30px;
+      margin: 5% 0 0 0; }
+      .rewardMask ul ol input, .rewardMask ul ol .uploadTheme .uploadThemeContent .item textarea, .uploadTheme .uploadThemeContent .item .rewardMask ul ol textarea {
+        padding: 0 5%;
+        background: none;
+        border: none;
+        outline: none;
+        width: 90%;
+        height: 100%;
+        color: #fff;
+        font-size: .7rem;
+        font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+        .rewardMask ul ol input::-webkit-input-placeholder, .rewardMask ul ol .uploadTheme .uploadThemeContent .item textarea::-webkit-input-placeholder, .uploadTheme .uploadThemeContent .item .rewardMask ul ol textarea::-webkit-input-placeholder {
+          color: #FFBC00;
+          opacity: .3;
+          text-align: center;
+          font-size: .7rem;
+          font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+    .rewardMask ul .active {
+      border: 1px solid #FFBC00;
+      color: #fff;
+      background: #FFBC00; }
+  .rewardMask .maskButton {
+    margin-top: 2rem;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    background-color: #FFBC00;
+    border-radius: 0 0 5px 5px; }
+    .rewardMask .maskButton a {
+      text-decoration: none; }
+    .rewardMask .maskButton img {
+      width: .7rem;
+      height: .7rem;
+      margin-right: .5rem; }
+    .rewardMask .maskButton span {
+      font: 0.75rem/2rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #fff; }
+  .rewardMask .rewardColse {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: .7rem;
+    height: .7rem; }
 
 .sampleReelsList {
   padding-bottom: 2.4rem; }

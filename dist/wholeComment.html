@@ -13,6 +13,10 @@
 <meta name="msapplication-tap-highlight" content="no">
 <title>全部评论</title>
 <link rel="stylesheet" href="styles/comment.css">
+<link rel="stylesheet" href="styles/lib/dropload.css">
+<style>
+  .dropload-load,.dropload-noData{color:#fff;}
+</style>
 <body>
 <div class="wrapper" id="wrapper">
     <header class="header">
@@ -22,7 +26,7 @@
     </header>
    <div class="wholeComment">
         <h2><span>评价 · 10201</span></h2>
-        <ul class="commentList">
+        <ul class="commentList lists">
             <li>
                 <div class="commentTop">
                     <div class="icon"><img src="images/theme01.png" alt=""></div>
@@ -125,18 +129,62 @@
     </div>
 </div>
 <!-- script begin -->
-<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script src="scripts/lib/zepto.min.js"></script>
+<script src="scripts/lib/dropload.min.js"></script>
+<script>
+  $(function(){
+    var counter = 0;
+    // 每页展示4个
+    var num = 4;
+    var pageStart = 0,pageEnd = 0;
+    // dropload
+    $('.wrapper').dropload({
+    scrollArea : window,
+    loadDownFn : function(me){
+      $.ajax({
+          type: 'GET',
+          url: 'scripts/json/more.json',
+          dataType: 'json',
+          success: function(data){
+              var result = '';
+              counter++;
+              pageEnd = num * counter;
+              pageStart = pageEnd - num;
+
+              for(var i = pageStart; i < pageEnd; i++){
+                  result +=   '<a class="item opacity" href="'+data.lists[i].link+'">'
+                                  +'<img src="'+data.lists[i].pic+'" alt="">'
+                                  +'<h3>'+data.lists[i].title+'</h3>'
+                                  +'<span class="date">'+data.lists[i].date+'</span>'
+                              +'</a>';
+                  if((i + 1) >= data.lists.length){
+                      // 锁定
+                      me.lock();
+                      // 无数据
+                      me.noData();
+                      break;
+                  }
+              }
+              // 为了测试，延迟1秒加载
+              setTimeout(function(){
+                  $('.lists').append(result);
+                  // 每次数据加载完，必须重置
+                  me.resetload();
+              },1000);
+
+          },
+          error: function(xhr, type){
+              alert('Ajax error!');
+              // 即使加载出错，也得重置
+              me.resetload();
+          }
+      });
+    }
+    });
+  });
+</script>
 <script>
 $(document).ready(function(){
-    //控制图片高宽
-    var winHeight=$(window).height();
-    var wrapperHeight=$(".wrapper").height();
-    if(wrapperHeight>winHeight){
-        $(".wrapper").css("height","auto");
-    }else{
-        $(".wrapper").css("height","100%");
-    }
-
 //提交评论
 $(".commentBotton .r").on("click",function(){
    $(this).parent().next().css("display","flex");

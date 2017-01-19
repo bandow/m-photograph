@@ -5,8 +5,8 @@ body{
 }
 #wrapper{
     width: 100%;
+    min-height: 100%;
     max-width: 640px;
-    min-height: 320px;
     margin: 0 auto;
     overflow: hidden; 
     background-color:$colorBg;

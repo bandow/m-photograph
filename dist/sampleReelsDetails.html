@@ -41,25 +41,49 @@
             <h2>翔子lens</h2>
         </div>
         <div class="sampleReelsDetailsBtn">
-            <a href="rewardSuccess.html">
+            <a href="javascript:;">
                  <img src="images/reward_white.png" alt="">
                  <span>打赏</span>
             </a>
         </div>
     </div>
 </div>
+<!-- 打赏弹出框 begin -->
+<div class="rewardMask">
+    <h3>给 摄影师 打赏</h3>
+    <div class="head"><img src="images/head_icon.png" alt=""></div>
+    <h4>翔子Lens</h4>
+    <ul class="rewardMaskList">
+        <li><span>2</span>元</li>
+        <li><span>5.2</span>元</li>
+        <li><span>6.6</span>元</li>
+        <li><span>88</span>元</li>
+        <ol>
+            <input type="text" placeholder="其他金额">
+        </ol>
+    </ul>
+    <div class="maskButton">
+        <a href="rewardSuccess.html">
+             <img src="images/reward_white_small.png" alt="">
+            <span>打赏</span>
+        </a>  
+    </div>
+    <img class="rewardColse" src="images/reward_colse.png" alt="">
+</div>
+<!-- 打赏弹出框 end -->
 <!-- script begin -->
 <script src="scripts/lib/jquery-3.1.0.min.js"></script>
 <script>
     $(document).ready(function(){
-        ///控制图片高宽
-        var winHeight=$(window).height();
-        var wrapperHeight=$(".wrapper").height();
-        if(wrapperHeight>winHeight){
-            $(".wrapper").css("height","auto");
-        }else{
-            $(".wrapper").css("height","100%");
-        }
+       $(".sampleReelsDetailsBtn").on("click",function(){
+            $(".rewardMask").show();
+       });
+       $(".rewardColse").on("click",function(){
+            $(".rewardMask").hide();
+       });
+       $(".rewardMaskList li").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+       });
     });
 </script>
 <!-- script end -->

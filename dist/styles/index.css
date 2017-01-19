@@ -157,6 +157,18 @@ body {
   height: auto; }
   .swiper-slide img {
     width: 100%; }
+  .swiper-slide p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font: 0.85rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff; }
 
 .headerIndex {
   position: absolute;
@@ -236,8 +248,25 @@ body {
   width: 90%;
   margin: 0 auto; }
   .hotCity .hotCityList ul li {
+    position: relative;
     margin-bottom: .5rem; }
     .hotCity .hotCityList ul li a {
       font-size: 0; }
     .hotCity .hotCityList ul li img {
       width: 100%; }
+    .hotCity .hotCityList ul li .text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center; }
+      .hotCity .hotCityList ul li .text h3 {
+        font: 0.85rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        color: #fff; }
+      .hotCity .hotCityList ul li .text p {
+        font: 0.65rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        color: #fff; }

@@ -1,0 +1,430 @@
+@charset "UTF-8";
+/* =================================================================
+* Reset Style for Mobile
+* Author:雪丘行||Bandow
+* Author URI:http://www.unll123.com/
+* Date:2016-10-18
+* Version:0.0.1
+* ================================================================== */
+html {
+  font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  /*-webkit-text-size-adjust是解决 iPhone 横屏时默认会放大文字的问题*/
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+html, body {
+  /*-webkit-user-select:none禁止用户进行复制.选择.*/
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  /*使用min-height:100%代替height：100%*/
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  /*弹性滚动-局部滚动开启弹性滚动：将属性挂在body上，可以避免很多奇怪的bug。*/
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, div, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  /*把所有元素的内边距和边框不再会增加它的宽度*/
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  box-sizing: border-box; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, input, .uploadTheme .uploadThemeContent .item textarea {
+  outline: none;
+  -webkit-tap-highlight-color: transparent; }
+
+html {
+  font-size: 18px; }
+
+@media (min-device-width: 320px) {
+  html {
+    font-size: 18px; } }
+
+@media (min-device-width: 360px) {
+  html {
+    font-size: 20px; } }
+
+@media (min-device-width: 375px) {
+  html {
+    font-size: 21px; } }
+
+@media (min-device-width: 384px) {
+  html {
+    font-size: 21px; } }
+
+@media (min-device-width: 400px) {
+  html {
+    font-size: 22px; } }
+
+@media (min-device-width: 414px) {
+  html {
+    font-size: 23px; } }
+
+@media (min-device-width: 480px) {
+  html {
+    font-size: 26px; } }
+
+@media (min-device-width: 568px) {
+  html {
+    font-size: 28px; } }
+
+@media (min-device-width: 533px) {
+  html {
+    font-size: 28px; } }
+
+@media (min-device-width: 600px) {
+  html {
+    font-size: 30px; } }
+
+@media (min-device-width: 640px) {
+  html {
+    font-size: 24px; } }
+
+.header {
+  padding: 0 5%;
+  height: 2.4rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B1A1F; }
+  .header h1 {
+    font: 0.75rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center; }
+  .header a {
+    text-align: center;
+    width: 1rem; }
+    .header a img {
+      width: 80%; }
+  .header .spot {
+    display: -webkit-flex;
+    display: flex; }
+    .header .spot em {
+      margin: 0 0.05rem;
+      display: block;
+      width: .2rem;
+      height: .2rem;
+      background-color: #fff;
+      border-radius: 100%; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+#wrapper {
+  width: 100%;
+  max-width: 640px;
+  min-height: 320px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #171717; }
+
+.sampleReels {
+  padding-bottom: 3rem; }
+  .sampleReels .sampleReelsBtn {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 2.4rem;
+    background-color: #FFBC00; }
+    .sampleReels .sampleReelsBtn a {
+      display: block;
+      font: 0.7rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #fff;
+      text-align: center;
+      text-decoration: none; }
+
+.sampleReelsItme {
+  margin: 0 auto;
+  width: 100%; }
+  .sampleReelsItme h2 {
+    margin: 0 auto;
+    width: 96%;
+    font: 0.75rem/3 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #FFBC00; }
+  .sampleReelsItme .swiper-slide {
+    font-size: 0; }
+    .sampleReelsItme .swiper-slide img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 8.5rem; }
+    .sampleReelsItme .swiper-slide p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      padding: 0 5%;
+      font: 0.65rem/2.4 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      background-color: #000;
+      opacity: .8;
+      color: #fff; }
+
+.sampleReelsList {
+  padding-bottom: 2.4rem; }
+  .sampleReelsList .item {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 0;
+    margin-bottom: .5rem; }
+    .sampleReelsList .item a {
+      text-decoration: none; }
+    .sampleReelsList .item img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 12rem; }
+    .sampleReelsList .item p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      padding: 0 5%;
+      font: 0.65rem/2.4 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      background-color: #000;
+      opacity: .5;
+      color: #fff; }
+  .sampleReelsList .sampleReelsBtn {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 2.4rem;
+    background-color: #FFBC00; }
+    .sampleReelsList .sampleReelsBtn a {
+      display: block;
+      font: 0.7rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #fff;
+      text-align: center;
+      text-decoration: none; }
+
+.uploadSampleReels {
+  padding-bottom: 2.4rem; }
+  .uploadSampleReels > div {
+    margin-top: .5rem; }
+
+.uploadTheme {
+  background-color: #1B1B1B; }
+  .uploadTheme .uploadThemeContent {
+    padding-left: 5%; }
+    .uploadTheme .uploadThemeContent .item {
+      padding: 2% 0;
+      border-bottom: 1px solid #333;
+      align-items: flex-start;
+      display: -webkit-flex;
+      display: flex; }
+      .uploadTheme .uploadThemeContent .item span {
+        font: 0.7rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        color: #767676;
+        -webkit-flex: 1;
+        flex: 1; }
+      .uploadTheme .uploadThemeContent .item input, .uploadTheme .uploadThemeContent .item textarea {
+        -webkit-flex: 3.5;
+        flex: 3.5;
+        background: none;
+        border: none;
+        outline: none;
+        width: 100%;
+        height: 100%;
+        font: 0.7rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+        color: #767676;
+        -webkit-flex: 2.5;
+        flex: 2.5; }
+        .uploadTheme .uploadThemeContent .item input::-webkit-input-placeholder, .uploadTheme .uploadThemeContent .item textarea::-webkit-input-placeholder {
+          color: #393939;
+          font: 0.65rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+      .uploadTheme .uploadThemeContent .item:last-child {
+        border-bottom: none; }
+
+.uploadImg {
+  position: relative;
+  background-color: #1B1B1B;
+  padding: 5%;
+  overflow: hidden; }
+  .uploadImg .uploadAdd {
+    float: left;
+    width: 5rem;
+    height: 5rem;
+    border: 1px dotted #333;
+    background: url(../images/btn_upload.png) center center no-repeat;
+    background-size: 1.5rem 1.5rem; }
+    .uploadImg .uploadAdd a {
+      padding-top: 3.2rem;
+      display: block;
+      font: 0.65rem/2.4 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #393939;
+      text-align: center; }
+
+.uploadFood {
+  position: relative;
+  padding: 4% 5%;
+  background-color: #1B1B1B; }
+  .uploadFood a {
+    display: block;
+    font: 0.7rem/1.2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #bdbdbd;
+    text-decoration: none; }
+  .uploadFood:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    border: 1px solid;
+    border-bottom: 0;
+    border-right: 0;
+    color: #ccc;
+    -moz-transform: rotateZ(135deg);
+    -o-transform: rotateZ(135deg);
+    -ms-transform: rotateZ(135deg);
+    -webkit-transform: rotateZ(135deg);
+    transform: rotateZ(135deg); }
+
+.uploadBtn {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  height: 2.4rem;
+  background-color: #FFBC00; }
+  .uploadBtn a {
+    display: block;
+    font: 0.7rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff;
+    text-align: center;
+    text-decoration: none; }
+
+.sampleReelsDetails .item {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  font-size: 0;
+  margin-bottom: .5rem; }
+  .sampleReelsDetails .item a {
+    text-decoration: none; }
+  .sampleReelsDetails .item img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 12rem; }
+  .sampleReelsDetails .item p {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding: 0 5%;
+    font: 0.65rem/2.4 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    background-color: #000;
+    opacity: .5;
+    color: #fff; }
+
+.sampleReelsDetails .detailsImg {
+  font-size: 0; }
+  .sampleReelsDetails .detailsImg img {
+    width: 100%;
+    height: auto;
+    margin-bottom: .5rem; }
+
+.sampleReelsDetailsName {
+  margin: 1rem 0;
+  text-align: center; }
+  .sampleReelsDetailsName .head {
+    margin: 0 auto;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    overflow: hidden; }
+    .sampleReelsDetailsName .head img {
+      width: 100%;
+      height: 100%; }
+  .sampleReelsDetailsName .grade {
+    margin: -.8rem auto 0; }
+    .sampleReelsDetailsName .grade img {
+      width: 1.8rem; }
+  .sampleReelsDetailsName h2 {
+    font: 0.7rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff; }
+
+.sampleReelsDetailsBtn {
+  width: 100%;
+  height: 2.4rem;
+  background-color: #FFBC00; }
+  .sampleReelsDetailsBtn a {
+    justify-content: center;
+    align-items: center;
+    display: -webkit-flex;
+    display: flex;
+    text-decoration: none; }
+  .sampleReelsDetailsBtn img {
+    width: .7rem;
+    height: .7rem;
+    margin-right: .3rem; }
+  .sampleReelsDetailsBtn span {
+    font: 0.7rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff; }
+
+.rewardSuccess {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center; }
+  .rewardSuccess img {
+    width: 2.5rem;
+    height: auto; }
+  .rewardSuccess p {
+    text-align: center;
+    font: 0.7rem/1.5 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #767676; }

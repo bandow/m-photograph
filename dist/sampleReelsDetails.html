@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>作品集详情</title>
+<link rel="stylesheet" href="styles/sampleReels.css">
+<body>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+    	<a href="javascript:history.go(-1)"><img src="images/go_back.png" alt=""></a>
+    	<h1>作品集详情</h1>
+    	<a class="spot" href=""><em></em><em></em><em></em></a>
+    </header>
+    <div class="sampleReelsDetails">
+        <div class="item">
+            <a href="">
+                <img src="images/sample_reels.png" alt="">
+                <p>人像摄影001</p>
+            </a>
+        </div>
+        <div class="detailsImg">
+            <img src="images/detailsImg1.png" alt="">
+            <img src="images/detailsImg2.png" alt="">
+            <img src="images/detailsImg3.png" alt="">
+            <img src="images/detailsImg4.png" alt="">
+        </div>
+        <div class="sampleReelsDetailsName">
+            <div class="head">
+                <img src="images/head_icon.png" alt="">   
+            </div>
+            <div class="grade"><img src="images/grade3.png" alt=""></div>
+            <h2>翔子lens</h2>
+        </div>
+        <div class="sampleReelsDetailsBtn">
+            <a href="rewardSuccess.html">
+                 <img src="images/reward_white.png" alt="">
+                 <span>打赏</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!-- script begin -->
+<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script>
+    $(document).ready(function(){
+        ///控制图片高宽
+        var winHeight=$(window).height();
+        var wrapperHeight=$(".wrapper").height();
+        if(wrapperHeight>winHeight){
+            $(".wrapper").css("height","auto");
+        }else{
+            $(".wrapper").css("height","100%");
+        }
+    });
+</script>
+<!-- script end -->
+</body>
+</html>

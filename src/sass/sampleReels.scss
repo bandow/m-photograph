@@ -1,0 +1,330 @@
+@import 'base','varable','header';
+body{
+    width:100%;
+    height:100%
+}
+#wrapper{
+    width: 100%;
+    max-width: 640px;
+    min-height: 320px;
+    margin: 0 auto;
+    overflow: hidden; 
+    background-color:$colorBg;
+}
+//sampleReels 我的作品集
+.sampleReels{
+	padding-bottom:3rem;
+	.sampleReelsBtn{
+		position:fixed;
+		left:0;
+		right:0;
+		bottom:0;
+		z-index:1;
+		width:100%;
+		height:2.4rem;
+	 	background-color:#FFBC00;
+	    a{
+	    	display:block;
+	    	font:.7rem/2.4rem $publicFont;
+		    color:$colorWhite;
+		    text-align:center;
+		    text-decoration:none;
+	    }
+	}
+}
+.sampleReelsItme{
+	margin:0 auto;
+	width:100%;
+	h2{
+		margin:0 auto;
+		width:96%;
+		font:.75rem/3 $publicFont;
+		color:#FFBC00;
+	}
+	.swiper-slide{
+		font-size:0;
+		img{
+			width:100%;
+			height:100%;
+			max-width: 100%;
+            max-height: 8.5rem;
+		}
+		p{
+			position:absolute;
+			left:0;
+			right:0;
+			bottom:0;
+			z-index:1;
+			padding:0 5%;
+			font:.65rem/2.4 $publicFont;
+			background-color:#000;
+			opacity:.8;
+			color:$colorWhite;
+		}
+	}
+}
+//sampleReelsList  人像作品集
+.sampleReelsList{
+	padding-bottom:2.4rem;
+	.item{
+		position:relative;
+		width:100%;
+		height:auto;
+		overflow:hidden;
+		font-size:0;
+		margin-bottom:.5rem;
+		a{
+			text-decoration:none;
+		}
+		img{
+			width:100%;
+			height:100%;
+			max-width: 100%;
+            max-height: 12rem;
+		}
+		p{
+			position:absolute;
+			left:0;
+			right:0;
+			bottom:0;
+			z-index:1;
+			padding:0 5%;
+			font:.65rem/2.4 $publicFont;
+			background-color:#000;
+			opacity:.5;
+			color:$colorWhite;
+		}
+	}
+	.sampleReelsBtn{
+		position:fixed;
+		left:0;
+		right:0;
+		bottom:0;
+		z-index:1;
+		width:100%;
+		height:2.4rem;
+	 	background-color:#FFBC00;
+	    a{
+	    	display:block;
+	    	font:.7rem/2.4rem $publicFont;
+		    color:$colorWhite;
+		    text-align:center;
+		    text-decoration:none;
+	    }
+	}
+}
+//uploadSampleReels 上传/编辑作品集
+.uploadSampleReels{
+	padding-bottom:2.4rem;
+	>div{
+		margin-top:.5rem;
+	}
+}
+.uploadTheme{
+	background-color:#1B1B1B;
+    .uploadThemeContent{
+    	padding-left:5%;
+    	.item{
+    		padding:2% 0;
+    		border-bottom:1px solid #333;
+	       	align-items:flex-start;
+	       	display:-webkit-flex;
+	       	display:flex;
+	       	span{
+	       		font:.7rem/1.5 $publicFont;
+		    	color:#767676;
+		    	-webkit-flex:1;
+		        flex:1;
+	       	}
+	       	input{
+	       		-webkit-flex:3.5;
+	       		flex:3.5;
+	       		background:none;
+		        border:none;
+		        outline:none;
+		        width:100%;
+		        height:100%;
+		        font:.7rem/1.5 $publicFont;
+		        color:#767676;
+		        -webkit-flex:2.5;
+		        flex:2.5;
+		        &::-webkit-input-placeholder{
+		            color:#393939;
+		            font:.65rem/1.5 $publicFont;
+		        }
+	       	}
+	       	textarea{
+	       		@extend input;
+	       	}
+	       	&:last-child{
+	       		border-bottom:none;
+	       	}
+    	}
+    }
+}
+.uploadImg{
+	position:relative;
+	background-color:#1B1B1B;
+	padding:5%;
+    overflow: hidden;
+	.uploadAdd{
+        float:left;
+		width:5rem;
+		height:5rem;
+		border:1px dotted #333;
+		background:url(../images/btn_upload.png) center center no-repeat;
+		background-size:1.5rem 1.5rem;
+		a{
+			padding-top:3.2rem;
+			display:block;
+			font:.65rem/2.4 $publicFont;
+			color:#393939;
+			text-align:center;
+		}
+	}
+}
+.uploadFood{
+	position:relative;
+	padding:4% 5%;
+    background-color:#1B1B1B;
+    a{
+    	display:block;
+    	font:.7rem/1.2 $publicFont;
+	    color:#bdbdbd;
+    	text-decoration:none;
+    }
+    &:after{
+        content:"";
+        position: absolute;
+        top:50%;
+        right:5%;
+        margin-top:-3px;
+        width:6px;
+        height:6px;
+        border: 1px solid;
+        border-bottom: 0;
+        border-right: 0;
+        color: #ccc;
+        @include transform(rotateZ(135deg));
+    }
+}
+.uploadBtn{
+	position:fixed;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:1;
+	width:100%;
+	height:2.4rem;
+ 	background-color:#FFBC00;
+    a{
+    	display:block;
+    	font:.7rem/2.4rem $publicFont;
+	    color:$colorWhite;
+	    text-align:center;
+	    text-decoration:none;
+    }
+}
+//sampleReelsDetails 作品集详情
+.sampleReelsDetails{
+	.item{
+		position:relative;
+		width:100%;
+		height:auto;
+		overflow:hidden;
+		font-size:0;
+		margin-bottom:.5rem;
+		a{
+			text-decoration:none;
+		}
+		img{
+			width:100%;
+			height:100%;
+			max-width: 100%;
+            max-height: 12rem;
+		}
+		p{
+			position:absolute;
+			left:0;
+			right:0;
+			bottom:0;
+			z-index:1;
+			padding:0 5%;
+			font:.65rem/2.4 $publicFont;
+			background-color:#000;
+			opacity:.5;
+			color:$colorWhite;
+		}
+	}
+	.detailsImg{
+		font-size:0;
+		img{
+			width:100%;
+			height:auto;
+			margin-bottom:.5rem;
+		}
+	}
+}
+.sampleReelsDetailsName{
+	margin:1rem 0;
+	text-align:center;
+	.head{
+		margin:0 auto;
+		width:3.5rem;
+		height:3.5rem;
+		border-radius:100%;
+		overflow:hidden;
+		img{
+			width:100%;
+			height:100%;
+		}
+	}
+	.grade{
+		margin:-.8rem auto 0;
+		img{
+			width:1.8rem;
+		}
+	}
+	h2{
+		font:.7rem/1.5 $publicFont;
+	    color:$colorWhite;
+	}
+}
+.sampleReelsDetailsBtn{
+	width:100%;
+	height:2.4rem;
+ 	background-color:#FFBC00;
+    a{
+    	justify-content:center;//子元素水平居中
+        align-items:center;//子元素垂直居中
+        display:-webkit-flex;
+        display:flex;
+	    text-decoration:none;
+    }
+    img{
+         width:.7rem;
+         height:.7rem;
+         margin-right:.3rem;
+    }
+    span{
+    	font:.7rem/2.4rem $publicFont;
+	    color:$colorWhite;
+    }
+}
+//rewardSuccess 打赏成功
+.rewardSuccess{
+	position:absolute;
+	top:50%;
+	left:50%;
+	@include transform(translate(-50%,-50%));
+	text-align:center;
+	img{
+		width:2.5rem;
+		height:auto;
+	}
+	p{
+		text-align:center;
+		font:.7rem/1.5 $publicFont;
+	    color:#767676;
+	}
+}

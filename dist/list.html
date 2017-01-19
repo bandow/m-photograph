@@ -13,69 +13,134 @@
 <meta name="msapplication-tap-highlight" content="no">
 <title>摄影平台列表</title>
 <link rel="stylesheet" href="styles/list.css">
+<link rel="stylesheet" href="styles/lib/dropload.css">
+<style>
+	.dropload-load,.dropload-noData{color:#fff;}
+</style>
 <body>
 <div class="wrapper" id="wrapper">
     <header class="header">
     	<a href="javascript:history.go(-1)"><img src="images/go_back.png" alt=""></a>
     	<h1>摄影师列表</h1>
-    	<a href=""><img src="images/search_icon.png" alt=""></a>
+    	<a href="select.html"><img src="images/search_icon.png" alt=""></a>
     </header>
-	<div class="list">
-	    <a href="details.html"><img src="images/list.jpg" alt=""></a>
-		<div class="listContent">
-			<div class="head"><img src="images/theme01.png" alt=""></div>
-			<div class="text">
-			    <div class="name">
-			    	<h3>翔子lens</h3>
-			    	<p><img src="images/star.png" alt=""><span>LV.3</span></p>
-			    </div>
-				<p>广州丨人像摄影师</p>
-				<p class="textList">擅长：<span>人像</span><span>日系</span><span>情绪</span></p>
-			</div>
-			<div class="reward">
-			    <img src="images/reward_yellow.png" alt="">
-				<p>打赏</p>
-			</div>
-		</div>
-	</div>
-	<div class="list">
-	    <a href="details.html"><img src="images/list.jpg" alt=""></a>
-		<div class="listContent">
-			<div class="head"><img src="images/theme01.png" alt=""></div>
-			<div class="text">
-			    <div class="name">
-			    	<h3>翔子lens</h3>
-			    	<p><img src="images/star.png" alt=""><span>LV.3</span></p>
-			    </div>
-				<p>广州丨人像摄影师</p>
-				<p class="textList">擅长：<span>人像</span><span>日系</span><span>情绪</span></p>
-			</div>
-			<div class="reward">
-			    <img src="images/reward_yellow.png" alt="">
-				<p>打赏</p>
+    <div class="lists">
+    	<div class="list">
+		    <a href="details.html"><img src="images/sample_reels.png" alt=""></a>
+			<div class="listContent">
+				<div class="head"><img src="images/theme01.png" alt=""></div>
+				<div class="text">
+				    <div class="name">
+				    	<h3>翔子lens</h3>
+				    	<img src="images/grade3.png" alt="">
+				    </div>
+					<p>广州丨人像摄影师</p>
+					<p class="textList">擅长：<span>人像</span><span>日系</span><span>情绪</span></p>
+				</div>
+				<div class="reward">
+				    <a href="sampleReelsDetails.html">
+				    	<img src="images/reward_yellow.png" alt="">
+						<p>打赏</p>
+				    </a>
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="list">
-	    <a href="details.html"><img src="images/list.jpg" alt=""></a>
-		<div class="listContent">
-			<div class="head"><img src="images/theme01.png" alt=""></div>
-			<div class="text">
-			    <div class="name">
-			    	<h3>翔子lens</h3>
-			    	<p><img src="images/star.png" alt=""><span>LV.3</span></p>
-			    </div>
-				<p>广州丨人像摄影师</p>
-				<p class="textList">擅长：<span>人像</span><span>日系</span><span>情绪</span></p>
-			</div>
-			<div class="reward">
-			    <img src="images/reward_yellow.png" alt="">
-				<p>打赏</p>
+		<div class="list">
+		    <a href="details.html"><img src="images/sample_reels.png" alt=""></a>
+			<div class="listContent">
+				<div class="head"><img src="images/theme01.png" alt=""></div>
+				<div class="text">
+				    <div class="name">
+				    	<h3>翔子lens</h3>
+				    	<img src="images/grade3.png" alt="">
+				    </div>
+					<p>广州丨人像摄影师</p>
+					<p class="textList">擅长：<span>人像</span><span>日系</span><span>情绪</span></p>
+				</div>
+				<div class="reward">
+				    <a href="">
+				    	<img src="images/reward_yellow.png" alt="">
+						<p>打赏</p>
+				    </a>
+				</div>
 			</div>
 		</div>
-	</div>
+		<div class="list">
+		    <a href="details.html"><img src="images/sample_reels.png" alt=""></a>
+			<div class="listContent">
+				<div class="head"><img src="images/theme01.png" alt=""></div>
+				<div class="text">
+				    <div class="name">
+				    	<h3>翔子lens</h3>
+				    	<img src="images/grade3.png" alt="">
+				    </div>
+					<p>广州丨人像摄影师</p>
+					<p class="textList">擅长：<span>人像</span><span>日系</span><span>情绪</span></p>
+				</div>
+				<div class="reward">
+				    <a href="">
+				    	<img src="images/reward_yellow.png" alt="">
+						<p>打赏</p>
+				    </a>
+				</div>
+			</div>
+		</div>
+    </div>	
 </div>
 <!-- script begin -->
+<script src="scripts/lib/zepto.min.js"></script>
+<script src="scripts/lib/dropload.min.js"></script>
+<script>
+	$(function(){
+		var counter = 0;
+		// 每页展示4个
+		var num = 4;
+		var pageStart = 0,pageEnd = 0;
+		// dropload
+		$('.wrapper').dropload({
+		scrollArea : window,
+		loadDownFn : function(me){
+		  $.ajax({
+		      type: 'GET',
+		      url: 'scripts/json/more.json',
+		      dataType: 'json',
+		      success: function(data){
+		          var result = '';
+		          counter++;
+		          pageEnd = num * counter;
+		          pageStart = pageEnd - num;
+
+		          for(var i = pageStart; i < pageEnd; i++){
+		              result +=   '<a class="item opacity" href="'+data.lists[i].link+'">'
+		                              +'<img src="'+data.lists[i].pic+'" alt="">'
+		                              +'<h3>'+data.lists[i].title+'</h3>'
+		                              +'<span class="date">'+data.lists[i].date+'</span>'
+		                          +'</a>';
+		              if((i + 1) >= data.lists.length){
+		                  // 锁定
+		                  me.lock();
+		                  // 无数据
+		                  me.noData();
+		                  break;
+		              }
+		          }
+		          // 为了测试，延迟1秒加载
+		          setTimeout(function(){
+		              $('.lists').append(result);
+		              // 每次数据加载完，必须重置
+		              me.resetload();
+		          },1000);
+		      },
+		      error: function(xhr, type){
+		          alert('Ajax error!');
+		          // 即使加载出错，也得重置
+		          me.resetload();
+		      }
+		  });
+		}
+		});
+	});
+</script>
 <!-- script end -->
 </body>
 </html>

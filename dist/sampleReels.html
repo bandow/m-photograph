@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>我的作品集</title>
+<link rel="stylesheet" href="styles/sampleReels.css">
+<link rel="stylesheet" href="styles/lib/swiper-3.3.1.min.css">
+<body>
+<div class="wrapper" id="wrapper">
+    <header class="header">
+    	<a href="javascript:history.go(-1)"><img src="images/go_back.png" alt=""></a>
+    	<h1>我的作品集</h1>
+    	<a class="spot" href=""><em></em><em></em><em></em></a>
+    </header>
+    <div class="sampleReels">
+        <div class="sampleReelsItme">
+            <h2>人像 · 22</h2>
+            <div class="swiper-container1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="sampleReelsList.html">
+                            <img src="images/theme01.png" alt="" />
+                            <p>人像摄影 · 冬天日系</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="sampleReelsList.html">
+                            <img src="images/banner.png" alt="" />
+                            <p>人像摄影 · 冬天日系</p>
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="sampleReelsList.html">
+                            <img src="images/banner.png" alt="" />
+                            <p>人像摄影 · 冬天日系</p>
+                        </a>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="sampleReelsItme">
+            <h2>风光 · 22</h2>
+            <div class="swiper-container2">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="images/banner.png" alt="" />
+                      <p>人像摄影 · 冬天日系</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner.png" alt="" />
+                        <p>人像摄影 · 冬天日系</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner.png" alt="" />
+                        <p>人像摄影 · 冬天日系</p>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="sampleReelsItme">
+            <h2>风光 · 22</h2>
+            <div class="swiper-container3">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="images/banner.png" alt="" />
+                      <p>人像摄影 · 冬天日系</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner.png" alt="" />
+                        <p>人像摄影 · 冬天日系</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="images/banner.png" alt="" />
+                        <p>人像摄影 · 冬天日系</p>
+                    </div>
+                </div>        
+            </div>
+        </div>
+        <div class="sampleReelsBtn"><a href="uploadSampleReels.html">上传作品集</a></div>
+    </div>
+</div>
+<!-- script begin -->
+<script src="scripts/lib/jquery-3.1.0.min.js"></script>
+<script src="scripts/lib/swiper-3.3.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        ///控制图片高宽
+        var winHeight=$(window).height();
+        var wrapperHeight=$(".wrapper").height();
+        if(wrapperHeight>winHeight){
+            $(".wrapper").css("height","auto");
+        }else{
+            $(".wrapper").css("height","100%");
+        }
+
+        //幻灯片
+        var mySwiper = new Swiper('.swiper-container1',{
+            pagination : '.swiper-pagination',
+            loop : true,
+            // autoplay: 5000,
+            slidesPerView :1.2,
+            spaceBetween : 20,
+        });
+
+        var mySwiper = new Swiper('.swiper-container2',{
+            pagination : '.swiper-pagination',
+            loop : true,
+            // autoplay: 5000,
+            slidesPerView :1.2,
+            spaceBetween : 20,
+        });
+
+        var mySwiper = new Swiper('.swiper-container3',{
+            pagination : '.swiper-pagination',
+            loop : true,
+            // autoplay: 5000,
+            slidesPerView :1.2,
+            spaceBetween : 20,
+        });
+    });
+</script>
+<!-- script end -->
+</body>
+</html>

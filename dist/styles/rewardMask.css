@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/* =================================================================
+* Reset Style for Mobile
+* Author:雪丘行||Bandow
+* Author URI:http://www.unll123.com/
+* Date:2016-10-18
+* Version:0.0.1
+* ================================================================== */
+html {
+  font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+  /*-webkit-text-size-adjust是解决 iPhone 横屏时默认会放大文字的问题*/
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+html, body {
+  /*-webkit-user-select:none禁止用户进行复制.选择.*/
+  -webkit-user-select: none;
+  user-select: none;
+  width: 100%;
+  /*使用min-height:100%代替height：100%*/
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  /*弹性滚动-局部滚动开启弹性滚动：将属性挂在body上，可以避免很多奇怪的bug。*/
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, div, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  /*把所有元素的内边距和边框不再会增加它的宽度*/
+  -moz-box-sizing: border-box;
+  /* Firefox */
+  -webkit-box-sizing: border-box;
+  /* Safari */
+  box-sizing: border-box; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+a, input {
+  outline: none;
+  -webkit-tap-highlight-color: transparent; }
+
+html {
+  font-size: 18px; }
+
+@media (min-device-width: 320px) {
+  html {
+    font-size: 18px; } }
+
+@media (min-device-width: 360px) {
+  html {
+    font-size: 20px; } }
+
+@media (min-device-width: 375px) {
+  html {
+    font-size: 21px; } }
+
+@media (min-device-width: 384px) {
+  html {
+    font-size: 21px; } }
+
+@media (min-device-width: 400px) {
+  html {
+    font-size: 22px; } }
+
+@media (min-device-width: 414px) {
+  html {
+    font-size: 23px; } }
+
+@media (min-device-width: 480px) {
+  html {
+    font-size: 26px; } }
+
+@media (min-device-width: 568px) {
+  html {
+    font-size: 28px; } }
+
+@media (min-device-width: 533px) {
+  html {
+    font-size: 28px; } }
+
+@media (min-device-width: 600px) {
+  html {
+    font-size: 30px; } }
+
+@media (min-device-width: 640px) {
+  html {
+    font-size: 24px; } }
+
+.header {
+  padding: 0 5%;
+  height: 2.4rem;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1B1A1F; }
+  .header h1 {
+    font: 0.75rem/2.4rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center; }
+  .header a {
+    text-align: center;
+    width: 1rem; }
+    .header a img {
+      width: 80%; }
+  .header .spot {
+    display: -webkit-flex;
+    display: flex; }
+    .header .spot em {
+      margin: 0 0.05rem;
+      display: block;
+      width: .2rem;
+      height: .2rem;
+      background-color: #fff;
+      border-radius: 100%; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+#wrapper {
+  width: 100%;
+  max-width: 640px;
+  min-height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #171717; }
+
+.rewardMask {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  padding: 5% 0 0 0;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: auto;
+  background: #171717;
+  border-radius: 5px; }
+  .rewardMask h3 {
+    text-align: center;
+    font: 0.75rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff; }
+  .rewardMask .head {
+    margin: 0 auto;
+    width: 2rem;
+    height: 2rem;
+    overflow: hidden;
+    border-radius: 100%; }
+    .rewardMask .head img {
+      width: 100%;
+      height: 100%; }
+  .rewardMask h4 {
+    text-align: center;
+    font: 0.6rem/2 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+    color: #fff; }
+  .rewardMask ul {
+    padding: 0 5%;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; }
+    .rewardMask ul li {
+      width: 48%;
+      height: 1.5rem;
+      border-radius: 30px;
+      border: 1px solid #FFBC00;
+      font: 0.6rem/1.5rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #FFBC00;
+      text-align: center;
+      margin: 5% 4% 0 0; }
+      .rewardMask ul li span {
+        font-size: .8rem;
+        margin-right: .2rem; }
+      .rewardMask ul li:nth-child(2n) {
+        margin-right: 0; }
+    .rewardMask ul ol {
+      border: 1px solid #FFBC00;
+      width: 100%;
+      height: 1.5rem;
+      border-radius: 30px;
+      margin: 5% 0 0 0; }
+      .rewardMask ul ol input {
+        padding: 0 5%;
+        background: none;
+        border: none;
+        outline: none;
+        width: 90%;
+        height: 100%;
+        color: #fff;
+        font-size: .7rem;
+        font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+        .rewardMask ul ol input::-webkit-input-placeholder {
+          color: #FFBC00;
+          opacity: .3;
+          text-align: center;
+          font-size: .7rem;
+          font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif; }
+    .rewardMask ul .active {
+      border: 1px solid #FFBC00;
+      color: #fff;
+      background: #FFBC00; }
+  .rewardMask .maskButton {
+    margin-top: 2rem;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    background-color: #FFBC00;
+    border-radius: 0 0 5px 5px; }
+    .rewardMask .maskButton a {
+      text-decoration: none; }
+    .rewardMask .maskButton img {
+      width: .7rem;
+      height: .7rem;
+      margin-right: .5rem; }
+    .rewardMask .maskButton span {
+      font: 0.75rem/2rem "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      color: #fff; }
+  .rewardMask .rewardColse {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: .7rem;
+    height: .7rem; }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+<meta name="description" content="摄影平台"/>
+<meta name="keywords" content="摄影平台"/>
+<meta name="author" content="name, sycbbb@sina.com"/>
+<meta name="robots" content="index,follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no, email=no,adress=no"/>
+<meta name="msapplication-tap-highlight" content="no">
+<title>打赏弹出框</title>
+<link rel="stylesheet" href="styles/rewardMask.css">
+<body>
+<!-- 打赏弹出框 begin -->
+<div class="rewardMask">
+    <h3>给 摄影师 打赏</h3>
+    <div class="head"><img src="images/head_icon.png" alt=""></div>
+    <h4>翔子Lens</h4>
+    <ul class="rewardMaskList">
+        <li><span>2</span>元</li>
+        <li><span>5.2</span>元</li>
+        <li><span>6.6</span>元</li>
+        <li><span>88</span>元</li>
+        <ol>
+            <input type="text" placeholder="其他金额">
+        </ol>
+    </ul>
+    <div class="maskButton">
+        <a href="rewardSuccess.html">
+             <img src="images/reward_white_small.png" alt="">
+            <span>打赏</span>
+        </a>  
+    </div>
+    <img class="rewardColse" src="images/reward_colse.png" alt="">
+</div>
+<!-- 打赏弹出框 end -->
+<script scr="scripts/lib/jquery-3.1.0.min.js"></script>
+<script>
+	$(function(){
+		$(".rewardBtn").on("click",function(){
+            $(".rewardMask").show();
+       });
+       $(".rewardColse").on("click",function(){
+            $(".rewardMask").hide();
+       });
+       $(".rewardMaskList li").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+       });
+	})
+</script>
+<!-- script end -->
+</body>
+</html>

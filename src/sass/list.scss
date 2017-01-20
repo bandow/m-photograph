@@ -105,3 +105,121 @@ body{
 	    }
     }
 }
+.rewardMask{
+    position:fixed;
+    top:50%;
+    left:50%;
+    z-index:1;
+    display:none;
+    padding:5% 0 0 0;
+    @include transform(translate(-50%,-50%));
+    width:80%;
+    height:auto;
+    background: #171717;
+    border-radius:5px;
+    h3{
+        text-align:center;
+        font:.75rem/2 $publicFont;
+        color:$colorWhite; 
+    }
+    .head{
+        margin:0 auto;
+        width:2rem;
+        height:2rem;
+        overflow:hidden;
+        border-radius:100%;
+        img{
+            width:100%;
+            height:100%;
+        }
+    }
+    h4{
+        text-align:center;
+        font:.6rem/2 $publicFont;
+        color:$colorWhite; 
+    }
+    ul{
+        padding:0 5%;
+        display:-webkit-flex;
+        display:flex;
+        align-items:center; 
+        flex-wrap:wrap;
+        li{
+            width:48%;
+            height:1.5rem;
+            border-radius:30px;
+            border:1px solid #FFBC00;
+            font:.6rem/1.5rem $publicFont;
+            color:#FFBC00;
+            text-align:center;
+            margin:5% 4% 0 0;
+            span{
+                font-size:.8rem;
+                margin-right:.2rem;
+            }
+            &:nth-child(2n){
+                margin-right:0;
+            }
+        }
+        ol{
+           border:1px solid #FFBC00;
+           width:100%;
+           height:1.5rem;
+           border-radius:30px;
+           margin:5% 0 0 0;
+            input{
+                padding:0 5%;
+                background:none;
+                border:none;
+                outline:none;
+                width:90%;
+                height:100%;
+                color:$colorWhite;
+                font-size:.7rem;
+                font-family:$publicFont;
+                &::-webkit-input-placeholder{
+                    color:#FFBC00;
+                    opacity: .3;
+                    text-align:center;
+                    font-size:.7rem;
+                    font-family:$publicFont;
+                }
+            }
+        }
+        .active{
+           border:1px solid #FFBC00; 
+           color:$colorWhite;
+           background:#FFBC00; 
+        }
+    }
+    .maskButton{
+        margin-top:2rem;
+        display:-webkit-flex;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:100%;
+        height:2rem;
+        background-color:#FFBC00;
+        border-radius: 0 0 5px 5px;
+        a{
+            text-decoration:none;
+        }
+        img{
+            width:.7rem;
+            height:.7rem;
+            margin-right:.5rem;
+        }
+        span{
+           font:.75rem/2rem $publicFont;
+           color:$colorWhite;  
+        }
+    }
+    .rewardColse{
+        position:absolute;
+        top:5%;
+        right:5%;
+        width:.7rem;
+        height:.7rem;
+    }
+}

@@ -38,7 +38,7 @@
 					<p class="textList">擅长：<span>人像</span><span>日系</span><span>情绪</span></p>
 				</div>
 				<div class="reward">
-				    <a href="sampleReelsDetails.html">
+				    <a class="rewardBtn" href="javascript:;">
 				    	<img src="images/reward_yellow.png" alt="">
 						<p>打赏</p>
 				    </a>
@@ -58,7 +58,7 @@
 					<p class="textList">擅长：<span>人像</span><span>日系</span><span>情绪</span></p>
 				</div>
 				<div class="reward">
-				    <a href="">
+				     <a class="rewardBtn" href="javascript:;">
 				    	<img src="images/reward_yellow.png" alt="">
 						<p>打赏</p>
 				    </a>
@@ -78,7 +78,7 @@
 					<p class="textList">擅长：<span>人像</span><span>日系</span><span>情绪</span></p>
 				</div>
 				<div class="reward">
-				    <a href="">
+				     <a class="rewardBtn" href="javascript:;">
 				    	<img src="images/reward_yellow.png" alt="">
 						<p>打赏</p>
 				    </a>
@@ -87,6 +87,29 @@
 		</div>
     </div>	
 </div>
+<!-- 打赏弹出框 begin -->
+<div class="rewardMask">
+    <h3>给 摄影师 打赏</h3>
+    <div class="head"><img src="images/head_icon.png" alt=""></div>
+    <h4>翔子Lens</h4>
+    <ul class="rewardMaskList">
+        <li><span>2</span>元</li>
+        <li><span>5.2</span>元</li>
+        <li><span>6.6</span>元</li>
+        <li><span>88</span>元</li>
+        <ol>
+            <input type="text" placeholder="其他金额">
+        </ol>
+    </ul>
+    <div class="maskButton">
+        <a href="rewardSuccess.html">
+             <img src="images/reward_white_small.png" alt="">
+            <span>打赏</span>
+        </a>  
+    </div>
+    <img class="rewardColse" src="images/reward_colse.png" alt="">
+</div>
+<!-- 打赏弹出框 end -->
 <!-- script begin -->
 <script src="scripts/lib/zepto.min.js"></script>
 <script src="scripts/lib/dropload.min.js"></script>
@@ -140,6 +163,19 @@
 		}
 		});
 	});
+</script>
+<script>
+	$(function(){
+		$(".rewardBtn").on("click",function(){
+            $(".rewardMask").show();
+       });
+       $(".rewardColse").on("click",function(){
+            $(".rewardMask").hide();
+       });
+       $(".rewardMaskList li").on("click",function(){
+            $(this).addClass("active").siblings().removeClass("active");
+       });
+	})
 </script>
 <!-- script end -->
 </body>

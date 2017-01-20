@@ -445,38 +445,39 @@ body {
     text-align: center;
     text-decoration: none; }
 
-.sampleReelsDetails .item {
-  position: relative;
-  width: 100%;
-  height: auto;
-  overflow: hidden;
-  font-size: 0;
-  margin-bottom: .5rem; }
-  .sampleReelsDetails .item a {
-    text-decoration: none; }
-  .sampleReelsDetails .item img {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 12rem; }
-  .sampleReelsDetails .item p {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-    padding: 0 5%;
-    font: 0.65rem/2.4 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
-    background-color: #000;
-    opacity: .5;
-    color: #fff; }
-
-.sampleReelsDetails .detailsImg {
-  font-size: 0; }
-  .sampleReelsDetails .detailsImg img {
+.sampleReelsDetails {
+  padding-bottom: 2.4rem; }
+  .sampleReelsDetails .item {
+    position: relative;
     width: 100%;
     height: auto;
+    overflow: hidden;
+    font-size: 0;
     margin-bottom: .5rem; }
+    .sampleReelsDetails .item a {
+      text-decoration: none; }
+    .sampleReelsDetails .item img {
+      width: 100%;
+      height: 100%;
+      max-width: 100%;
+      max-height: 12rem; }
+    .sampleReelsDetails .item p {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 1;
+      padding: 0 5%;
+      font: 0.65rem/2.4 "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+      background-color: #000;
+      opacity: .5;
+      color: #fff; }
+  .sampleReelsDetails .detailsImg {
+    font-size: 0; }
+    .sampleReelsDetails .detailsImg img {
+      width: 100%;
+      height: auto;
+      margin-bottom: .5rem; }
 
 .sampleReelsDetailsName {
   margin: 1rem 0;
@@ -499,6 +500,10 @@ body {
     color: #fff; }
 
 .sampleReelsDetailsBtn {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
   height: 2.4rem;
   background-color: #FFBC00; }
